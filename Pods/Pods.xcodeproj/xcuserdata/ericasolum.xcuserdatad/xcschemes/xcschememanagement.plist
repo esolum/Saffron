@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-Saffron.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SaffronTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SaffronUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RAMAnimatedTabBarController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7603897AC7CEFB03C8DF8644AF087BD3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B92302C10E4D49C034B498D85652F103</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D6E72E97046CAD4067F8398858869108</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1481EF7F4C71EE3EAB1BC9471EA9EDE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

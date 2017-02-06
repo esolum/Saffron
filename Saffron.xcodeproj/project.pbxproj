@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EC35AA504CB57B7FEF500E6 /* Pods_SaffronTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5BE5B4865347B1C44DAE26 /* Pods_SaffronTests.framework */; };
+		6D7675E81E48BB0A00A07969 /* AddMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7675E71E48BB0A00A07969 /* AddMealViewController.swift */; };
+		6D7675E91E48BB0A00A07969 /* AddMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7675E71E48BB0A00A07969 /* AddMealViewController.swift */; };
+		6D7675EF1E48BDC700A07969 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7675ED1E48BDC700A07969 /* Favorites.storyboard */; };
+		6D7675F01E48BDC700A07969 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7675ED1E48BDC700A07969 /* Favorites.storyboard */; };
+		6D7675F31E48BE0F00A07969 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7675F11E48BE0F00A07969 /* Discover.storyboard */; };
+		6D7675F41E48BE0F00A07969 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7675F11E48BE0F00A07969 /* Discover.storyboard */; };
+		6D7675F61E48BE5A00A07969 /* AddMeal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7675F51E48BE5A00A07969 /* AddMeal.storyboard */; };
+		6D7675F71E48BE5A00A07969 /* AddMeal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7675F51E48BE5A00A07969 /* AddMeal.storyboard */; };
+		6D7675F91E48BE8A00A07969 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7675F81E48BE8A00A07969 /* OrdersViewController.swift */; };
+		6D7675FA1E48BE8A00A07969 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7675F81E48BE8A00A07969 /* OrdersViewController.swift */; };
+		6D7675FC1E48BEA500A07969 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7675FB1E48BEA500A07969 /* ProfileViewController.swift */; };
+		6D7675FD1E48BEA500A07969 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7675FB1E48BEA500A07969 /* ProfileViewController.swift */; };
+		6D7676001E48BF9A00A07969 /* Orders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7675FE1E48BF9A00A07969 /* Orders.storyboard */; };
+		6D7676011E48BF9A00A07969 /* Orders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7675FE1E48BF9A00A07969 /* Orders.storyboard */; };
+		6D7676031E48BFB800A07969 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7676021E48BFB800A07969 /* Profile.storyboard */; };
+		6D7676041E48BFB800A07969 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7676021E48BFB800A07969 /* Profile.storyboard */; };
 		6DD1697E1E48A524009F7690 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1697D1E48A524009F7690 /* AppDelegate.swift */; };
 		6DD169801E48A524009F7690 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1697F1E48A524009F7690 /* FirstViewController.swift */; };
 		6DD169821E48A524009F7690 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD169811E48A524009F7690 /* SecondViewController.swift */; };
@@ -15,6 +32,11 @@
 		6DD1698A1E48A524009F7690 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD169881E48A524009F7690 /* LaunchScreen.storyboard */; };
 		6DD169951E48A524009F7690 /* SaffronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD169941E48A524009F7690 /* SaffronTests.swift */; };
 		6DD169A01E48A524009F7690 /* SaffronUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1699F1E48A524009F7690 /* SaffronUITests.swift */; };
+		6DD9D2121E48AD5200547454 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DD9D2111E48AD5200547454 /* GoogleService-Info.plist */; };
+		6DD9D2131E48AD5200547454 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DD9D2111E48AD5200547454 /* GoogleService-Info.plist */; };
+		6DD9D2141E48AD5200547454 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DD9D2111E48AD5200547454 /* GoogleService-Info.plist */; };
+		81EBD5461AD757ACB13FAD80 /* Pods_Saffron.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BDB8C3E187AB6A4090D8B9 /* Pods_Saffron.framework */; };
+		F26C5AEA80DE55132B2D2A20 /* Pods_SaffronUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A4713D160197D5565CA63A /* Pods_SaffronUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +57,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E5BE5B4865347B1C44DAE26 /* Pods_SaffronTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaffronTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47EDCD6D98A30C55C9D7ACFD /* Pods-SaffronTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaffronTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaffronTests/Pods-SaffronTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C9E07E03F34A97DA3ABF4F8 /* Pods-Saffron.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saffron.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Saffron/Pods-Saffron.debug.xcconfig"; sourceTree = "<group>"; };
+		6D7675E71E48BB0A00A07969 /* AddMealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMealViewController.swift; sourceTree = "<group>"; };
+		6D7675EE1E48BDC700A07969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Favorites.storyboard; sourceTree = "<group>"; };
+		6D7675F21E48BE0F00A07969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
+		6D7675F51E48BE5A00A07969 /* AddMeal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddMeal.storyboard; sourceTree = "<group>"; };
+		6D7675F81E48BE8A00A07969 /* OrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		6D7675FB1E48BEA500A07969 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6D7675FF1E48BF9A00A07969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Orders.storyboard; sourceTree = "<group>"; };
+		6D7676021E48BFB800A07969 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		6DD1697A1E48A524009F7690 /* Saffron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saffron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD1697D1E48A524009F7690 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DD1697F1E48A524009F7690 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +82,13 @@
 		6DD1699B1E48A524009F7690 /* SaffronUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaffronUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD1699F1E48A524009F7690 /* SaffronUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaffronUITests.swift; sourceTree = "<group>"; };
 		6DD169A11E48A524009F7690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DD9D2111E48AD5200547454 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7DBE5406C2FCEDE90D053318 /* Pods-SaffronTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaffronTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaffronTests/Pods-SaffronTests.release.xcconfig"; sourceTree = "<group>"; };
+		82A4713D160197D5565CA63A /* Pods_SaffronUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaffronUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AF74B50DDFB6B5BBDCBE3F8 /* Pods-SaffronUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaffronUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaffronUITests/Pods-SaffronUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4D4DBFF27664DE8E6771AE1 /* Pods-SaffronUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaffronUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaffronUITests/Pods-SaffronUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B1BDB8C3E187AB6A4090D8B9 /* Pods_Saffron.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Saffron.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41FB3AE94D251296A580280 /* Pods-Saffron.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saffron.release.xcconfig"; path = "Pods/Target Support Files/Pods-Saffron/Pods-Saffron.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81EBD5461AD757ACB13FAD80 /* Pods_Saffron.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EC35AA504CB57B7FEF500E6 /* Pods_SaffronTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +112,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F26C5AEA80DE55132B2D2A20 /* Pods_SaffronUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D06B6DBBBD0F48552C99FA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C9E07E03F34A97DA3ABF4F8 /* Pods-Saffron.debug.xcconfig */,
+				B41FB3AE94D251296A580280 /* Pods-Saffron.release.xcconfig */,
+				47EDCD6D98A30C55C9D7ACFD /* Pods-SaffronTests.debug.xcconfig */,
+				7DBE5406C2FCEDE90D053318 /* Pods-SaffronTests.release.xcconfig */,
+				9AF74B50DDFB6B5BBDCBE3F8 /* Pods-SaffronUITests.debug.xcconfig */,
+				A4D4DBFF27664DE8E6771AE1 /* Pods-SaffronUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6DD169711E48A524009F7690 = {
 			isa = PBXGroup;
 			children = (
+				6DD9D2111E48AD5200547454 /* GoogleService-Info.plist */,
 				6DD1697C1E48A524009F7690 /* Saffron */,
 				6DD169931E48A524009F7690 /* SaffronTests */,
 				6DD1699E1E48A524009F7690 /* SaffronUITests */,
 				6DD1697B1E48A524009F7690 /* Products */,
+				0D06B6DBBBD0F48552C99FA8 /* Pods */,
+				73FC358A5D88DBDBA4D438F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,7 +161,15 @@
 				6DD1697D1E48A524009F7690 /* AppDelegate.swift */,
 				6DD1697F1E48A524009F7690 /* FirstViewController.swift */,
 				6DD169811E48A524009F7690 /* SecondViewController.swift */,
+				6D7675E71E48BB0A00A07969 /* AddMealViewController.swift */,
+				6D7675F81E48BE8A00A07969 /* OrdersViewController.swift */,
+				6D7675FB1E48BEA500A07969 /* ProfileViewController.swift */,
 				6DD169831E48A524009F7690 /* Main.storyboard */,
+				6D7676021E48BFB800A07969 /* Profile.storyboard */,
+				6D7675FE1E48BF9A00A07969 /* Orders.storyboard */,
+				6D7675F51E48BE5A00A07969 /* AddMeal.storyboard */,
+				6D7675F11E48BE0F00A07969 /* Discover.storyboard */,
+				6D7675ED1E48BDC700A07969 /* Favorites.storyboard */,
 				6DD169861E48A524009F7690 /* Assets.xcassets */,
 				6DD169881E48A524009F7690 /* LaunchScreen.storyboard */,
 				6DD1698B1E48A524009F7690 /* Info.plist */,
@@ -128,6 +195,16 @@
 			path = SaffronUITests;
 			sourceTree = "<group>";
 		};
+		73FC358A5D88DBDBA4D438F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1BDB8C3E187AB6A4090D8B9 /* Pods_Saffron.framework */,
+				0E5BE5B4865347B1C44DAE26 /* Pods_SaffronTests.framework */,
+				82A4713D160197D5565CA63A /* Pods_SaffronUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DD169A41E48A524009F7690 /* Build configuration list for PBXNativeTarget "Saffron" */;
 			buildPhases = (
+				5C19432A57A212230EC2C434 /* [CP] Check Pods Manifest.lock */,
 				6DD169761E48A524009F7690 /* Sources */,
 				6DD169771E48A524009F7690 /* Frameworks */,
 				6DD169781E48A524009F7690 /* Resources */,
+				7FA0FE3EDA627D3AC8DFEFD4 /* [CP] Embed Pods Frameworks */,
+				43040BE4E713610B112986B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DD169A71E48A524009F7690 /* Build configuration list for PBXNativeTarget "SaffronTests" */;
 			buildPhases = (
+				5F242964BA865F099B09EF35 /* [CP] Check Pods Manifest.lock */,
 				6DD1698C1E48A524009F7690 /* Sources */,
 				6DD1698D1E48A524009F7690 /* Frameworks */,
 				6DD1698E1E48A524009F7690 /* Resources */,
+				9CE5C934ECC10A52D1409EDC /* [CP] Embed Pods Frameworks */,
+				21D8DD064F272E9DB61B823B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DD169AA1E48A524009F7690 /* Build configuration list for PBXNativeTarget "SaffronUITests" */;
 			buildPhases = (
+				8357BA61CAE1CBBAEBE76D2D /* [CP] Check Pods Manifest.lock */,
 				6DD169971E48A524009F7690 /* Sources */,
 				6DD169981E48A524009F7690 /* Frameworks */,
 				6DD169991E48A524009F7690 /* Resources */,
+				22E302F81626FDBAFBDE75F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,15 +281,19 @@
 				TargetAttributes = {
 					6DD169791E48A524009F7690 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L9NRV34LQC;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					6DD1698F1E48A524009F7690 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 6DD169791E48A524009F7690;
 					};
 					6DD1699A1E48A524009F7690 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 6DD169791E48A524009F7690;
 					};
@@ -236,8 +325,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DD1698A1E48A524009F7690 /* LaunchScreen.storyboard in Resources */,
+				6D7675EF1E48BDC700A07969 /* Favorites.storyboard in Resources */,
+				6D7675F61E48BE5A00A07969 /* AddMeal.storyboard in Resources */,
+				6DD9D2121E48AD5200547454 /* GoogleService-Info.plist in Resources */,
 				6DD169871E48A524009F7690 /* Assets.xcassets in Resources */,
 				6DD169851E48A524009F7690 /* Main.storyboard in Resources */,
+				6D7676031E48BFB800A07969 /* Profile.storyboard in Resources */,
+				6D7675F31E48BE0F00A07969 /* Discover.storyboard in Resources */,
+				6D7676001E48BF9A00A07969 /* Orders.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD9D2131E48AD5200547454 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,17 +348,149 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D7676041E48BFB800A07969 /* Profile.storyboard in Resources */,
+				6DD9D2141E48AD5200547454 /* GoogleService-Info.plist in Resources */,
+				6D7675F71E48BE5A00A07969 /* AddMeal.storyboard in Resources */,
+				6D7676011E48BF9A00A07969 /* Orders.storyboard in Resources */,
+				6D7675F01E48BDC700A07969 /* Favorites.storyboard in Resources */,
+				6D7675F41E48BE0F00A07969 /* Discover.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21D8DD064F272E9DB61B823B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaffronTests/Pods-SaffronTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22E302F81626FDBAFBDE75F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaffronUITests/Pods-SaffronUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43040BE4E713610B112986B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Saffron/Pods-Saffron-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C19432A57A212230EC2C434 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F242964BA865F099B09EF35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7FA0FE3EDA627D3AC8DFEFD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Saffron/Pods-Saffron-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8357BA61CAE1CBBAEBE76D2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CE5C934ECC10A52D1409EDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaffronTests/Pods-SaffronTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DD169761E48A524009F7690 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D7675FC1E48BEA500A07969 /* ProfileViewController.swift in Sources */,
+				6D7675F91E48BE8A00A07969 /* OrdersViewController.swift in Sources */,
 				6DD169821E48A524009F7690 /* SecondViewController.swift in Sources */,
+				6D7675E81E48BB0A00A07969 /* AddMealViewController.swift in Sources */,
 				6DD1697E1E48A524009F7690 /* AppDelegate.swift in Sources */,
 				6DD169801E48A524009F7690 /* FirstViewController.swift in Sources */,
 			);
@@ -281,6 +509,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DD169A01E48A524009F7690 /* SaffronUITests.swift in Sources */,
+				6D7675FA1E48BE8A00A07969 /* OrdersViewController.swift in Sources */,
+				6D7675FD1E48BEA500A07969 /* ProfileViewController.swift in Sources */,
+				6D7675E91E48BB0A00A07969 /* AddMealViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +531,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6D7675ED1E48BDC700A07969 /* Favorites.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D7675EE1E48BDC700A07969 /* Base */,
+			);
+			name = Favorites.storyboard;
+			sourceTree = "<group>";
+		};
+		6D7675F11E48BE0F00A07969 /* Discover.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D7675F21E48BE0F00A07969 /* Base */,
+			);
+			name = Discover.storyboard;
+			sourceTree = "<group>";
+		};
+		6D7675FE1E48BF9A00A07969 /* Orders.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D7675FF1E48BF9A00A07969 /* Base */,
+			);
+			name = Orders.storyboard;
+			sourceTree = "<group>";
+		};
 		6DD169831E48A524009F7690 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -414,9 +669,12 @@
 		};
 		6DD169A51E48A524009F7690 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9E07E03F34A97DA3ABF4F8 /* Pods-Saffron.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L9NRV34LQC;
 				INFOPLIST_FILE = Saffron/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ericasolum.Saffron;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,9 +684,12 @@
 		};
 		6DD169A61E48A524009F7690 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B41FB3AE94D251296A580280 /* Pods-Saffron.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L9NRV34LQC;
 				INFOPLIST_FILE = Saffron/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ericasolum.Saffron;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,6 +699,7 @@
 		};
 		6DD169A81E48A524009F7690 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47EDCD6D98A30C55C9D7ACFD /* Pods-SaffronTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +714,7 @@
 		};
 		6DD169A91E48A524009F7690 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DBE5406C2FCEDE90D053318 /* Pods-SaffronTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +729,7 @@
 		};
 		6DD169AB1E48A524009F7690 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF74B50DDFB6B5BBDCBE3F8 /* Pods-SaffronUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SaffronUITests/Info.plist;
@@ -479,6 +743,7 @@
 		};
 		6DD169AC1E48A524009F7690 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D4DBFF27664DE8E6771AE1 /* Pods-SaffronUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SaffronUITests/Info.plist;
@@ -509,6 +774,7 @@
 				6DD169A61E48A524009F7690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DD169A71E48A524009F7690 /* Build configuration list for PBXNativeTarget "SaffronTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +783,7 @@
 				6DD169A91E48A524009F7690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DD169AA1E48A524009F7690 /* Build configuration list for PBXNativeTarget "SaffronUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +792,7 @@
 				6DD169AC1E48A524009F7690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

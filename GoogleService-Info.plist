@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>1027806440258-pth8gvri58uv245oejtn740rb3fopf69.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1027806440258-pth8gvri58uv245oejtn740rb3fopf69</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB995wLHVKnC7OETtA_vlX_lRmNQuGSjhs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1027806440258</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ericasolum.Saffron</string>
+	<key>PROJECT_ID</key>
+	<string>saffron-7416b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>saffron-7416b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1027806440258:ios:6994bc29eb65d67f</string>
+	<key>DATABASE_URL</key>
+	<string>https://saffron-7416b.firebaseio.com</string>
+</dict>
+</plist>
