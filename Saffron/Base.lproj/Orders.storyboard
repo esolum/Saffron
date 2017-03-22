@@ -1,35 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="93W-hB-TLk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zJ7-FS-XeR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Orders-->
-        <scene sceneID="M2V-fg-NnJ">
+        <scene sceneID="UdK-64-ORe">
             <objects>
-                <viewController id="93W-hB-TLk" customClass="OrdersViewController" customModule="Saffron" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zJ7-FS-XeR" customClass="OrdersViewController" customModule="Saffron" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XoH-bs-qPd"/>
-                        <viewControllerLayoutGuide type="bottom" id="QWm-3Z-MyN"/>
+                        <viewControllerLayoutGuide type="top" id="89Q-un-Qo9"/>
+                        <viewControllerLayoutGuide type="bottom" id="7vW-o0-2oB"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BIf-ss-0J5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="Kv1-mh-D6h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GE9-vT-MXM">
+                                <rect key="frame" x="174.5" y="312" width="26" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GE9-vT-MXM" firstAttribute="centerX" secondItem="Kv1-mh-D6h" secondAttribute="centerX" id="S1N-9g-7MU"/>
+                            <constraint firstItem="GE9-vT-MXM" firstAttribute="centerY" secondItem="Kv1-mh-D6h" secondAttribute="centerY" id="Xeg-So-8kK"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Orders" id="08T-Id-WMv" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
-                        <connections>
-                            <outlet property="animation" destination="h2U-vM-OmS" id="yz9-dc-ZLW"/>
-                        </connections>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Orders" image="orders" id="SOy-Uo-X1T"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CNv-dL-HHh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="h2U-vM-OmS" customClass="RAMLeftRotationAnimation" customModule="RAMAnimatedTabBarController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WOF-Sb-fgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="432"/>
+            <point key="canvasLocation" x="1692" y="431.33433283358323"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="orders" width="31" height="20"/>
+    </resources>
 </document>

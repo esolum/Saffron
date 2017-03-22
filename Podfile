@@ -6,10 +6,20 @@ target 'Saffron' do
   use_frameworks!
 
   # Pods for Saffron
+  pod 'Firebase'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/Storage'
   pod 'RAMAnimatedTabBarController', "~> 2.0.13"
+  pod 'UIColor_Hex_Swift', '~> 3.0.2'
+  pod 'ImageLoader'
+  pod 'IQKeyboardManagerSwift'
+  pod 'NVActivityIndicatorView', '~> 3.5'
+  pod 'AMScrollingNavbar'
+  pod 'TextFieldEffects', '~> 1.3'
+  pod 'MARoundButton'
+  pod 'DKImagePickerController'
 
   target 'SaffronTests' do
     inherit! :search_paths

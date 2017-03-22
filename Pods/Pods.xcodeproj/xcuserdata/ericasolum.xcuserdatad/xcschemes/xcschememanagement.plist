@@ -4,6 +4,36 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AMScrollingNavbar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DKImagePickerController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>IQKeyboardManagerSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ImageLoader.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MARoundButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NVActivityIndicatorView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Saffron.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,25 +54,75 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TextFieldEffects.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UIColor_Hex_Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7603897AC7CEFB03C8DF8644AF087BD3</key>
+		<key>008572AC23F82D125EBFE5AB58F56B9A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B92302C10E4D49C034B498D85652F103</key>
+		<key>3EDFE4052B5DE7D509935AC0774CB135</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D6E72E97046CAD4067F8398858869108</key>
+		<key>4DC059E04CBA98AEDDB5C34E02D551E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F1481EF7F4C71EE3EAB1BC9471EA9EDE</key>
+		<key>632A766EEE68A7A0C10B0AC0649A99DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6FFCC5AC0DBE47F3267DE6A6129FCE6D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9B7BEF22A2D2E5C2E4174836475BC47B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AF1E57D7DB6279A87838C34D09357F71</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C8B8B8546C8B922A2A15B17F06E554FF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA7791703CD3AC1D1BA1FC1C0CD21E53</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D29ECE69EF439D1FF5B5E9EB40FDFFE0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DCF3895548AE79FD3CBFBF9ABBC14CA4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7625ABA6BAA4780F3E9DFCC42A0C0C0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import Saffron
+@testable import FirebaseDatabase
 
 class SaffronTests: XCTestCase {
     

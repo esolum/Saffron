@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -8,77 +8,187 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Animated Tab Bar Controller-->
+        <!--Custom Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="CustomTabBarController" customModule="Saffron" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ThY-rZ-bIl" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="QCM-DF-xgo" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="JVm-Hu-PsT" kind="relationship" relationship="viewControllers" id="dp8-nQ-hh2"/>
-                        <segue destination="tkn-pD-GpJ" kind="relationship" relationship="viewControllers" id="XNg-ht-Kuq"/>
-                        <segue destination="2V6-Th-IOC" kind="relationship" relationship="viewControllers" id="nG7-xw-pvs"/>
+                        <segue destination="QCM-DF-xgo" kind="relationship" relationship="viewControllers" id="BdN-EW-Wku"/>
+                        <segue destination="ThY-rZ-bIl" kind="relationship" relationship="viewControllers" id="kmx-sy-aYc"/>
+                        <segue destination="JVm-Hu-PsT" kind="relationship" relationship="viewControllers" id="YHA-5h-jCD"/>
+                        <segue destination="tkn-pD-GpJ" kind="relationship" relationship="viewControllers" id="5j4-Bq-CU1"/>
+                        <segue destination="2V6-Th-IOC" kind="relationship" relationship="viewControllers" id="eRv-6T-n4y"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="55" y="-59"/>
         </scene>
-        <!--Favorites-->
+        <!--Following-->
         <scene sceneID="VOX-Db-zMB">
             <objects>
-                <viewControllerPlaceholder storyboardName="Favorites" id="ThY-rZ-bIl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Faves" id="HHb-Ze-CEK"/>
+                <viewControllerPlaceholder storyboardName="Following" id="ThY-rZ-bIl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Following" image="2A372263-EB98-40F3-B0D3-4FA51AEE3BAC" id="HHb-Ze-CEK" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="KT9-GD-jPg" id="2ih-b4-7B5"/>
+                        </connections>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nx3-ud-u6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="KT9-GD-jPg" customClass="RAMFlipBottomTransitionItemAnimations" customModule="RAMAnimatedTabBarController"/>
             </objects>
-            <point key="canvasLocation" x="715" y="-111"/>
+            <point key="canvasLocation" x="728" y="-347"/>
         </scene>
         <!--Discover-->
         <scene sceneID="ELA-av-uoi">
             <objects>
                 <viewControllerPlaceholder storyboardName="Discover" id="QCM-DF-xgo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Discover" id="hYr-SS-gid"/>
+                    <tabBarItem key="tabBarItem" title="Discover" image="discover" id="hYr-SS-gid" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="Yho-uo-6yS" id="lt2-9C-U6G"/>
+                        </connections>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LWr-kw-iNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Yho-uo-6yS" customClass="RAMFlipTopTransitionItemAnimations" customModule="RAMAnimatedTabBarController"/>
             </objects>
-            <point key="canvasLocation" x="714" y="-59"/>
+            <point key="canvasLocation" x="726" y="-411"/>
         </scene>
         <!--AddMeal-->
         <scene sceneID="Rat-sr-tIi">
             <objects>
                 <viewControllerPlaceholder storyboardName="AddMeal" id="JVm-Hu-PsT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="AddMeal" id="FP4-Tq-BN6"/>
+                    <tabBarItem key="tabBarItem" title="AddMeal" image="add-meal" id="FP4-Tq-BN6" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmP-LB-EHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714" y="-1"/>
+            <point key="canvasLocation" x="729" y="-295"/>
         </scene>
         <!--Orders-->
         <scene sceneID="5zV-MJ-Hzk">
             <objects>
                 <viewControllerPlaceholder storyboardName="Orders" id="tkn-pD-GpJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Orders" id="vGn-Jx-fgO"/>
+                    <tabBarItem key="tabBarItem" title="Orders" image="orders" id="vGn-Jx-fgO" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3e-tA-xED" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="706" y="65"/>
+            <point key="canvasLocation" x="720" y="-238"/>
         </scene>
         <!--Profile-->
         <scene sceneID="dfe-Ou-oGa">
             <objects>
                 <viewControllerPlaceholder storyboardName="Profile" id="2V6-Th-IOC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="pML-4k-IsO"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="pML-4k-IsO" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OtR-jP-0fm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="701" y="116"/>
+            <point key="canvasLocation" x="701" y="-176"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="2A372263-EB98-40F3-B0D3-4FA51AEE3BAC" width="26" height="25">
+            <mutableData key="keyedArchiveRepresentation">
+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
+AAAWAAADtnN2U0UAAAAmAAAC2HpoQ04AAAAWAAADzGphSlAAAAAaAAAD4mVsR1IAAAAiAAAD/HB0UE8A
+AAAmAAAEHm5sTkwAAAAoAAAERGVzRVMAAAAmAAAEHnRoVEgAAAAkAAAEbHRyVFIAAAAiAAAEkGZpRkkA
+AAAoAAAEsmhySFIAAAAoAAAE2nBsUEwAAAAsAAAFAnJ1UlUAAAAiAAAFLmFyRUcAAAAmAAAFUGVuVVMA
+AAAmAAAFdgBWAWEAZQBvAGIAZQBjAG4A/QAgAFIARwBCACAAcAByAG8AZgBpAGwARwBlAG4AZQByAGUA
+bAAgAFIARwBCAC0AYgBlAHMAawByAGkAdgBlAGwAcwBlAFAAZQByAGYAaQBsACAAUgBHAEIAIABnAGUA
+bgDoAHIAaQBjAEMepQB1ACAAaADsAG4AaAAgAFIARwBCACAAQwBoAHUAbgBnAFAAZQByAGYAaQBsACAA
+UgBHAEIAIABHAGUAbgDpAHIAaQBjAG8EFwQwBDMEMAQ7BEwEPQQ4BDkAIAQ/BEAEPgREBDAEOQQ7ACAA
+UgBHAEIAUAByAG8AZgBpAGwAIABnAOkAbgDpAHIAaQBxAHUAZQAgAFIAVgBCAMEAbAB0AGEAbADhAG4A
+bwBzACAAUgBHAEIAIABwAHIAbwBmAGkAbJAadSgAIABSAEcAQgAggnJfaWPPj/AARwBlAG4AZQByAGkA
+cwBrACAAUgBHAEIALQBwAHIAbwBmAGkAbABPAGIAZQBjAG4A/QAgAFIARwBCACAAcAByAG8AZgBpAGwF
+5AXoBdUF5AXZBdwAIABSAEcAQgAgBdsF3AXcBdkAUAByAG8AZgBpAGwAbwAgAFIARwBCACAAZwBlAG4A
+ZQByAGkAYwBvAFAAcgBvAGYAaQBsACAAUgBHAEIAIABnAGUAbgBlAHIAaQBjAEEAbABsAGcAZQBtAGUA
+aQBuAGUAcwAgAFIARwBCAC0AUAByAG8AZgBpAGzHfLwYACAAUgBHAEIAINUEuFzTDMd8Zm6QGgAgAFIA
+RwBCACBjz4/wZYdO9k4AgiwAIABSAEcAQgAgMNcw7TDVMKEwpDDrA5MDtQO9A7kDugPMACADwAPBA78D
+xgOvA7sAIABSAEcAQgBQAGUAcgBmAGkAbAAgAFIARwBCACAAZwBlAG4A6QByAGkAYwBvAEEAbABnAGUA
+bQBlAGUAbgAgAFIARwBCAC0AcAByAG8AZgBpAGUAbA5CDhsOIw5EDh8OJQ5MACAAUgBHAEIAIA4XDjEO
+SA4nDkQOGwBHAGUAbgBlAGwAIABSAEcAQgAgAFAAcgBvAGYAaQBsAGkAWQBsAGUAaQBuAGUAbgAgAFIA
+RwBCAC0AcAByAG8AZgBpAGkAbABpAEcAZQBuAGUAcgBpAQ0AawBpACAAUgBHAEIAIABwAHIAbwBmAGkA
+bABVAG4AaQB3AGUAcgBzAGEAbABuAHkAIABwAHIAbwBmAGkAbAAgAFIARwBCBB4EMQRJBDgEOQAgBD8E
+QAQ+BEQEOAQ7BEwAIABSAEcAQgZFBkQGQQAgBioGOQYxBkoGQQAgAFIARwBCACAGJwZEBjkGJwZFAEcA
+ZQBuAGUAcgBpAGMAIABSAEcAQgAgAFAAcgBvAGYAaQBsAGV0ZXh0AAAAAENvcHlyaWdodCAyMDA3IEFw
+cGxlIEluYy4sIGFsbCByaWdodHMgcmVzZXJ2ZWQuAFhZWiAAAAAAAADzUgABAAAAARbPWFlaIAAAAAAA
+AHRNAAA97gAAA9BYWVogAAAAAAAAWnUAAKxzAAAXNFhZWiAAAAAAAAAoGgAAFZ8AALg2Y3VydgAAAAAA
+AAABAc0AAHNmMzIAAAAAAAEMQgAABd7///MmAAAHkgAA/ZH///ui///9owAAA9wAAMBs0iUmJyhaJGNs
+YXNzbmFtZVgkY2xhc3Nlc18QEE5TQml0bWFwSW1hZ2VSZXCjJykqWk5TSW1hZ2VSZXBYTlNPYmplY3TS
+JSYsLVdOU0FycmF5oiwq0iUmLzBeTlNNdXRhYmxlQXJyYXmjLywq0zIzCjQ1NldOU1doaXRlXE5TQ29s
+b3JTcGFjZUQwIDAAEAOADNIlJjg5V05TQ29sb3KiOCrSJSY7PFdOU0ltYWdlojsqXxAPTlNLZXllZEFy
+Y2hpdmVy0T9AVHJvb3SAAQAIABEAGgAjAC0AMgA3AEYATABXAF4AZQByAHkAgQCDAIUAigCMAI4AlwCc
+AKcAqQCrAK0AsgC1ALcAuQC7AL0AwgDZANsA3ROnE6wTtxPAE9MT1xPiE+sT8BP4E/sUABQPFBMUGhQi
+FC8UNBQ2FDgUPRRFFEgUTRRVFFgUahRtFHIAAAAAAAACAQAAAAAAAABBAAAAAAAAAAAAAAAAAAAUdA
+</mutableData>
+        </image>
+        <image name="add-meal" width="25" height="25"/>
+        <image name="discover" width="25" height="24"/>
+        <image name="orders" width="31" height="20"/>
+        <image name="profile" width="18" height="21"/>
+    </resources>
 </document>
