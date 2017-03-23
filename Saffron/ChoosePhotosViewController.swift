@@ -47,6 +47,10 @@ class ChoosePhotosViewController: UIViewController {
             self.assets = assets
             print(assets)
             
+            for asset in assets {
+                
+            }
+            
             
             
         }

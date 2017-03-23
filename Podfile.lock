@@ -5,6 +5,7 @@ PODS:
     - DKImagePickerController/ImageManager (= 3.5.1)
   - DKImagePickerController/Camera (3.5.1)
   - DKImagePickerController/ImageManager (3.5.1)
+  - DZNEmptyDataSet (1.8.1)
   - Firebase (3.5.2):
     - Firebase/Core (= 3.5.2)
   - Firebase/Analytics (3.5.2):
@@ -51,12 +52,14 @@ PODS:
   - MARoundButton (0.1.7)
   - NVActivityIndicatorView (3.5)
   - RAMAnimatedTabBarController (2.0.13)
+  - RAReorderableLayout (0.6.1)
   - TextFieldEffects (1.3.1)
   - UIColor_Hex_Swift (3.0.2)
 
 DEPENDENCIES:
   - AMScrollingNavbar
   - DKImagePickerController
+  - DZNEmptyDataSet
   - Firebase
   - Firebase/Auth
   - Firebase/Core
@@ -67,12 +70,14 @@ DEPENDENCIES:
   - MARoundButton
   - NVActivityIndicatorView (~> 3.5)
   - RAMAnimatedTabBarController (~> 2.0.13)
+  - RAReorderableLayout
   - TextFieldEffects (~> 1.3)
   - UIColor_Hex_Swift (~> 3.0.2)
 
 SPEC CHECKSUMS:
   AMScrollingNavbar: cf603d4d5f11061d466a0878b9ada136248927b2
   DKImagePickerController: 8db7e76a88a7a66a893ba30e935cc4c9bb7ed335
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Firebase: 94e63112efcad75226c0356a8f3032397b8547c9
   FirebaseAnalytics: d968d4d5f6aeb795cd64144337bcd233e530efc6
   FirebaseAuth: 26fd291c3b552fc9658420b867520d5ae080421c
@@ -89,9 +94,10 @@ SPEC CHECKSUMS:
   MARoundButton: 31967f6c80b89a795075ea6593d1102320d28dac
   NVActivityIndicatorView: e5252b082f93885f0bfc24c318719b4eaabcd37b
   RAMAnimatedTabBarController: 2510f3b66954c3f77ea1042a35d34df8f5f3b604
+  RAReorderableLayout: 5b6b87dd4022ee1747fd475623b14f5df940f754
   TextFieldEffects: faa47d428ee8eafb781a8413ac4345420d2328c4
   UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
 
-PODFILE CHECKSUM: 07621351cfb081f1f7ecff393e095e8e37c7059b
+PODFILE CHECKSUM: dbc41a6277ea35549eaa378c4ee24fcd44afdff2
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.1.1

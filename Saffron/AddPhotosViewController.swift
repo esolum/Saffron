@@ -8,18 +8,29 @@
 
 import UIKit
 import Photos
+import DKImagePickerController
+import DZNEmptyDataSet
+import RAReorderableLayout
 
-class AddPhotosViewController: UIViewController {
+class AddPhotosViewController: UIViewController, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate, RAReorderableLayoutDelegate, RAReorderableLayoutDataSource {
 
     //MARK: Properties
+    var assets: [DKAsset]!
     
-    @IBOutlet weak var readyButton: UIButton!
     
+    @IBOutlet weak var photoCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        assets = [DKAsset]()
+        
+        //Set up table view to handle empty data set
+        self.photoCollectionView.emptyDataSetSource = self
+        self.photoCollectionView.emptyDataSetDelegate = self
+        self.photoCollectionView.delegate = self
+        self.photoCollectionView.dataSource = self
+        //self.photoTableView.rowHeight = UITableViewAutomaticDimension
+        //self.photoTableView.estimatedRowHeight = 150
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,31 +38,131 @@ class AddPhotosViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    //Helper function to get the UIImage from the PHAsset
-    func getAssetThumbnail(asset: PHAsset) -> UIImage {
-        let manager = PHImageManager.default()
-        let option = PHImageRequestOptions()
-        var thumbnail = UIImage()
-        option.isSynchronous = true
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "photoCell", for: indexPath) as! PhotoTableViewCell
         
-        manager.requestImage(for: asset, targetSize: CGSize(width: 100, height: 100), contentMode: .aspectFit, options: option, resultHandler: {(result, info)->Void in
-            thumbnail = result!
+        let rowAsset = assets[indexPath.row]
+        let thing2 = rowAsset.fetchOriginalImage(false, completeBlock: { (image, info) in
+            
+            
+            
+            cell.img.image = image
         })
-        return thumbnail
-    }
-    //Helper function to get the UIImage from the PHAsset
-    func getAssetLarge(asset: PHAsset) -> UIImage {
-        let manager = PHImageManager.default()
-        let option = PHImageRequestOptions()
-        var thumbnail = UIImage()
-        option.isSynchronous = true
         
-        manager.requestImage(for: asset, targetSize: CGSize(width: 400, height: 300), contentMode: .aspectFit, options: option, resultHandler: {(result, info)->Void in
-            thumbnail = result!
-        })
-        return thumbnail
-    }
+        
+        // Configure the cell...
+     
+        return cell
+     }
+    
 
+    //MARK: Empty data set functions
+    func image(forEmptyDataSet scrollView: UIScrollView!) -> UIImage! {
+        return UIImage(named: "food-icons")
+        
+    }
+    
+    func buttonImage(forEmptyDataSet scrollView: UIScrollView!, for state: UIControlState) -> UIImage! {
+        return UIImage(named: "choose-photos-button")
+    }
+    
+    func spaceHeight(forEmptyDataSet scrollView: UIScrollView!) -> CGFloat {
+        return 20.0
+    }
+    
+    //Called when user presses the "Choose Photos" button that's added to empty set view
+    func emptyDataSet(_ scrollView: UIScrollView!, didTap button: UIButton!) {
+        let pickerController = DKImagePickerController()
+        pickerController.maxSelectableCount = 5
+        pickerController.assetType = .allPhotos
+        
+        pickerController.didCancel = { () in
+            print("User cancelled photo selection")
+            self.dismiss(animated: true, completion: nil)
+        }
+        pickerController.showsCancelButton = true
+        
+        pickerController.didSelectAssets = { (assets: [DKAsset]) in
+            //Callback happens when user dismisses view controller
+            self.assets = assets
+            self.photoCollectionView.reloadData()
+            print("Done and done")
+        }
+        self.present(pickerController, animated: true, completion: nil)
+    }
+    
+    // MARK: RAReorderableLayout delegate datasource
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let screenWidth = UIScreen.main.bounds.width
+        let threePiecesWidth = floor(screenWidth / 3.0 - ((2.0 / 3) * 2))
+        let twoPiecesWidth = floor(screenWidth / 2.0 - (2.0 / 2))
+        if (indexPath as NSIndexPath).section == 0 {
+            return CGSize(width: threePiecesWidth, height: threePiecesWidth)
+        }else {
+            return CGSize(width: twoPiecesWidth, height: twoPiecesWidth)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 2.0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 2.0
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return assets.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as! RACollectionViewCell
+        
+        let rowAsset = assets[indexPath.row]
+        let thing2 = rowAsset.fetchOriginalImage(false, completeBlock: { (image, info) in
+            
+            
+            
+            cell.imageView.image = image
+        })
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, allowMoveAt indexPath: IndexPath) -> Bool {
+        if collectionView.numberOfItems(inSection: (indexPath as NSIndexPath).section) <= 1 {
+            return false
+        }
+        return true
+    }
+    
+    /*func collectionView(_ collectionView: UICollectionView, at atIndexPath: IndexPath, didMoveTo toIndexPath: IndexPath) {
+        var asset: DKAsset
+        
+        asset = assets.remove(at: (atIndexPath as NSIndexPath).item)
+        assets.insert(asset, at: (toIndexPath as NSIndexPath).item)
+        
+    }*/
+    
+    func collectionView(_ collectionView: UICollectionView, at: IndexPath, willMoveTo toIndexPath: IndexPath) {
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        var asset: DKAsset
+        
+        asset = assets.remove(at: sourceIndexPath.row)
+        assets.insert(asset, at: destinationIndexPath.row)
+    }
+    
     
     // MARK: - Navigation
 
@@ -64,6 +175,26 @@ class AddPhotosViewController: UIViewController {
         
         
     }
+    
+    /*
+     // Override to support conditional editing of the table view.
+     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+     // Return false if you do not want the specified item to be editable.
+     return true
+     }
+     */
+    
+    /*
+     // Override to support editing the table view.
+     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+     if editingStyle == .delete {
+     // Delete the row from the data source
+     tableView.deleteRows(at: [indexPath], with: .fade)
+     } else if editingStyle == .insert {
+     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+     }
+     }
+     */
  
 
 }

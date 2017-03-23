@@ -11,6 +11,18 @@
 		6D19071A1E82EF04000F9B8D /* ChoosePhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1907191E82EF04000F9B8D /* ChoosePhotosViewController.swift */; };
 		6D19071B1E82EF04000F9B8D /* ChoosePhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1907191E82EF04000F9B8D /* ChoosePhotosViewController.swift */; };
 		6D19071C1E82EF04000F9B8D /* ChoosePhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1907191E82EF04000F9B8D /* ChoosePhotosViewController.swift */; };
+		6D19071E1E830F20000F9B8D /* DisplayPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19071D1E830F20000F9B8D /* DisplayPhotosViewController.swift */; };
+		6D19071F1E830F20000F9B8D /* DisplayPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19071D1E830F20000F9B8D /* DisplayPhotosViewController.swift */; };
+		6D1907201E830F20000F9B8D /* DisplayPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19071D1E830F20000F9B8D /* DisplayPhotosViewController.swift */; };
+		6D1907261E831E39000F9B8D /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1907251E831E39000F9B8D /* PhotoTableViewCell.swift */; };
+		6D1907271E831E39000F9B8D /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1907251E831E39000F9B8D /* PhotoTableViewCell.swift */; };
+		6D1907281E831E39000F9B8D /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1907251E831E39000F9B8D /* PhotoTableViewCell.swift */; };
+		6D19072A1E8340F0000F9B8D /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1907291E8340F0000F9B8D /* PhotoViewCell.swift */; };
+		6D19072B1E8340F0000F9B8D /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1907291E8340F0000F9B8D /* PhotoViewCell.swift */; };
+		6D19072C1E8340F0000F9B8D /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1907291E8340F0000F9B8D /* PhotoViewCell.swift */; };
+		6D19072E1E834569000F9B8D /* RACollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19072D1E834569000F9B8D /* RACollectionViewCell.swift */; };
+		6D19072F1E834569000F9B8D /* RACollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19072D1E834569000F9B8D /* RACollectionViewCell.swift */; };
+		6D1907301E834569000F9B8D /* RACollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19072D1E834569000F9B8D /* RACollectionViewCell.swift */; };
 		6D4FE3701E7B3B79007C9CC2 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6D4FE36B1E7B3B79007C9CC2 /* Montserrat-Bold.otf */; };
 		6D4FE3711E7B3B79007C9CC2 /* Montserrat-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6D4FE36C1E7B3B79007C9CC2 /* Montserrat-Hairline.otf */; };
 		6D4FE3721E7B3B79007C9CC2 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6D4FE36D1E7B3B79007C9CC2 /* Montserrat-Light.otf */; };
@@ -108,6 +120,10 @@
 		47EDCD6D98A30C55C9D7ACFD /* Pods-SaffronTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaffronTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaffronTests/Pods-SaffronTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C9E07E03F34A97DA3ABF4F8 /* Pods-Saffron.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saffron.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Saffron/Pods-Saffron.debug.xcconfig"; sourceTree = "<group>"; };
 		6D1907191E82EF04000F9B8D /* ChoosePhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosePhotosViewController.swift; sourceTree = "<group>"; };
+		6D19071D1E830F20000F9B8D /* DisplayPhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayPhotosViewController.swift; sourceTree = "<group>"; };
+		6D1907251E831E39000F9B8D /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		6D1907291E8340F0000F9B8D /* PhotoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
+		6D19072D1E834569000F9B8D /* RACollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACollectionViewCell.swift; sourceTree = "<group>"; };
 		6D4FE36B1E7B3B79007C9CC2 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
 		6D4FE36C1E7B3B79007C9CC2 /* Montserrat-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Hairline.otf"; sourceTree = "<group>"; };
 		6D4FE36D1E7B3B79007C9CC2 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
@@ -252,9 +268,13 @@
 			isa = PBXGroup;
 			children = (
 				6D4FE3751E7B3D43007C9CC2 /* AddPhotosViewController.swift */,
+				6D19072D1E834569000F9B8D /* RACollectionViewCell.swift */,
+				6D1907251E831E39000F9B8D /* PhotoTableViewCell.swift */,
+				6D19071D1E830F20000F9B8D /* DisplayPhotosViewController.swift */,
 				6D7675E71E48BB0A00A07969 /* AddMealViewController.swift */,
 				6D1907191E82EF04000F9B8D /* ChoosePhotosViewController.swift */,
 				6D4FE3781E7B3D6F007C9CC2 /* MealInfoViewController.swift */,
+				6D1907291E8340F0000F9B8D /* PhotoViewCell.swift */,
 				6D7675F51E48BE5A00A07969 /* AddMeal.storyboard */,
 			);
 			name = "Add Meal";
@@ -653,15 +673,19 @@
 			files = (
 				6D7675FC1E48BEA500A07969 /* ProfileViewController.swift in Sources */,
 				6D4FE3761E7B3D43007C9CC2 /* AddPhotosViewController.swift in Sources */,
+				6D1907261E831E39000F9B8D /* PhotoTableViewCell.swift in Sources */,
 				6DB1C5EC1E6A3D1E0050A562 /* Constants.swift in Sources */,
 				6DB1C5DB1E6A146C0050A562 /* FirebaseUtil.swift in Sources */,
 				6D98B8201E56084F0074B05B /* ChefViewController.swift in Sources */,
 				6D7675F91E48BE8A00A07969 /* OrdersViewController.swift in Sources */,
 				6DB1C5E01E6A157B0050A562 /* User.swift in Sources */,
 				6DB1C5F01E6A3D6D0050A562 /* IDGenerator.swift in Sources */,
+				6D19071E1E830F20000F9B8D /* DisplayPhotosViewController.swift in Sources */,
 				6D7676061E48C12900A07969 /* DiscoverViewController.swift in Sources */,
+				6D19072A1E8340F0000F9B8D /* PhotoViewCell.swift in Sources */,
 				6D98B8181E56031C0074B05B /* FollowingTableViewCell.swift in Sources */,
 				6D98B80A1E5600A70074B05B /* Order.swift in Sources */,
+				6D19072E1E834569000F9B8D /* RACollectionViewCell.swift in Sources */,
 				6DD169821E48A524009F7690 /* SecondViewController.swift in Sources */,
 				6D98B8241E5608760074B05B /* MealDetailViewController.swift in Sources */,
 				6D4FE3791E7B3D6F007C9CC2 /* MealInfoViewController.swift in Sources */,
@@ -679,12 +703,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D19071F1E830F20000F9B8D /* DisplayPhotosViewController.swift in Sources */,
 				6DB1C5F11E6A3D6D0050A562 /* IDGenerator.swift in Sources */,
 				6D98B80B1E5600A70074B05B /* Order.swift in Sources */,
+				6D19072B1E8340F0000F9B8D /* PhotoViewCell.swift in Sources */,
 				6DB1C5ED1E6A3D1E0050A562 /* Constants.swift in Sources */,
 				6DB1C5DC1E6A146C0050A562 /* FirebaseUtil.swift in Sources */,
+				6D1907271E831E39000F9B8D /* PhotoTableViewCell.swift in Sources */,
 				6D98B8191E56031C0074B05B /* FollowingTableViewCell.swift in Sources */,
 				6D7242B81E5F10A100F2473A /* CustomTabBarController.swift in Sources */,
+				6D19072F1E834569000F9B8D /* RACollectionViewCell.swift in Sources */,
 				6D98B8151E5602DE0074B05B /* FollowingTableViewController.swift in Sources */,
 				6D98B8211E56084F0074B05B /* ChefViewController.swift in Sources */,
 				6DD169951E48A524009F7690 /* SaffronTests.swift in Sources */,
@@ -711,13 +739,17 @@
 				6DB1C5E21E6A157B0050A562 /* User.swift in Sources */,
 				6D98B8221E56084F0074B05B /* ChefViewController.swift in Sources */,
 				6D19071C1E82EF04000F9B8D /* ChoosePhotosViewController.swift in Sources */,
+				6D1907301E834569000F9B8D /* RACollectionViewCell.swift in Sources */,
 				6D98B8261E5608760074B05B /* MealDetailViewController.swift in Sources */,
 				6D98B80C1E5600A70074B05B /* Order.swift in Sources */,
+				6D1907281E831E39000F9B8D /* PhotoTableViewCell.swift in Sources */,
 				6D7675FD1E48BEA500A07969 /* ProfileViewController.swift in Sources */,
 				6D4FE3771E7B3D43007C9CC2 /* AddPhotosViewController.swift in Sources */,
 				6D7675E91E48BB0A00A07969 /* AddMealViewController.swift in Sources */,
 				6D98B8081E56006D0074B05B /* Meal.swift in Sources */,
+				6D1907201E830F20000F9B8D /* DisplayPhotosViewController.swift in Sources */,
 				6D7676071E48C12900A07969 /* DiscoverViewController.swift in Sources */,
+				6D19072C1E8340F0000F9B8D /* PhotoViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

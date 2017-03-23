@@ -20,6 +20,8 @@ target 'Saffron' do
   pod 'TextFieldEffects', '~> 1.3'
   pod 'MARoundButton'
   pod 'DKImagePickerController'
+  pod 'DZNEmptyDataSet'
+  pod 'RAReorderableLayout'
 
   target 'SaffronTests' do
     inherit! :search_paths
