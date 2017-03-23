@@ -98,7 +98,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="i1T-vP-s4f">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="i1T-vP-s4f" customClass="RAReorderableLayout">
                                     <size key="itemSize" width="100" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -111,18 +111,7 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4lo-wJ-tdz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                                </imageView>
-                                            </subviews>
                                         </view>
-                                        <constraints>
-                                            <constraint firstItem="4lo-wJ-tdz" firstAttribute="height" secondItem="NHc-Qc-Hus" secondAttribute="height" id="Qhb-8j-y2q"/>
-                                            <constraint firstItem="4lo-wJ-tdz" firstAttribute="centerY" secondItem="NHc-Qc-Hus" secondAttribute="centerY" id="ZVq-jD-d9E"/>
-                                            <constraint firstItem="4lo-wJ-tdz" firstAttribute="centerX" secondItem="NHc-Qc-Hus" secondAttribute="centerX" id="fbx-Eq-fLD"/>
-                                            <constraint firstItem="4lo-wJ-tdz" firstAttribute="width" secondItem="NHc-Qc-Hus" secondAttribute="width" id="jzH-cQ-kkA"/>
-                                        </constraints>
                                         <size key="customSize" width="100" height="100"/>
                                     </collectionViewCell>
                                 </cells>

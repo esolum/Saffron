@@ -38,24 +38,6 @@ class AddPhotosViewController: UIViewController, DZNEmptyDataSetSource, DZNEmpty
         // Dispose of any resources that can be recreated.
     }
     
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "photoCell", for: indexPath) as! PhotoTableViewCell
-        
-        let rowAsset = assets[indexPath.row]
-        let thing2 = rowAsset.fetchOriginalImage(false, completeBlock: { (image, info) in
-            
-            
-            
-            cell.img.image = image
-        })
-        
-        
-        // Configure the cell...
-     
-        return cell
-     }
-    
 
     //MARK: Empty data set functions
     func image(forEmptyDataSet scrollView: UIScrollView!) -> UIImage! {
@@ -148,9 +130,6 @@ class AddPhotosViewController: UIViewController, DZNEmptyDataSetSource, DZNEmpty
         
     }*/
     
-    func collectionView(_ collectionView: UICollectionView, at: IndexPath, willMoveTo toIndexPath: IndexPath) {
-        
-    }
     
     func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
         return true
@@ -161,6 +140,8 @@ class AddPhotosViewController: UIViewController, DZNEmptyDataSetSource, DZNEmpty
         
         asset = assets.remove(at: sourceIndexPath.row)
         assets.insert(asset, at: destinationIndexPath.row)
+        
+        print("Thingy")
     }
     
     
