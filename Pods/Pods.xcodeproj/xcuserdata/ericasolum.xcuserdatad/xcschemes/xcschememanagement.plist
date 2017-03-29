@@ -8,107 +8,96 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>DKImagePickerController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>DZNEmptyDataSet.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
+		</dict>
+		<key>Hue.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>ImageLoader.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>MARoundButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>NVActivityIndicatorView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>7</integer>
 		</dict>
 		<key>Pods-Saffron.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>8</integer>
 		</dict>
 		<key>Pods-SaffronTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>9</integer>
 		</dict>
 		<key>Pods-SaffronUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>10</integer>
 		</dict>
 		<key>RAMAnimatedTabBarController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>11</integer>
 		</dict>
 		<key>RAReorderableLayout.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>14</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>TextFieldEffects.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>12</integer>
 		</dict>
 		<key>UIColor_Hex_Swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>13</integer>
+		</dict>
+		<key>WWCalendarTimeSelector-WWCalendarTimeSelectorStoryboardBundle.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>WWCalendarTimeSelector.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0ABAD5654BDAB2BF36B3F0C5C3682BD8</key>
+		<key>1AD28D27150C8C9FEDDBD8E7E8128C77</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>14B9F18F53147CA596FEAB1A8E4EC768</key>
+		<key>39E4059409A0D460B9EA8F23D62C0B26</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -118,22 +107,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>40B15E3A08FE5ABBB79D9E08FD42D2DE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>4DC059E04CBA98AEDDB5C34E02D551E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5093A12915971D087B338A5C682F7878</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5C2B3CBFC1C54DB71821BC1505EF44AB</key>
+		<key>5813CCBFBB3FEF34E0F9CB788335450A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -143,17 +122,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>72164B8C586E7DA908A70C90BC042CB8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>787163350CD4D32FF2EF403F4C7708D9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7920024FDF5B56DFD62C2E695D3CE416</key>
+		<key>83C79D75F9D14F654DA2F3DAA1077A15</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -163,7 +132,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B7A9884DBFD4480C89FB8184CBA2A212</key>
+		<key>A21FC24AF4EB2E7A476178B6AD9E95D2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B2542602E50EDF091ADB18B4688DF34F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -183,12 +157,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>D4B669F499DEDDD77D0BCE413548A289</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DCF3895548AE79FD3CBFBF9ABBC14CA4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E7625ABA6BAA4780F3E9DFCC42A0C0C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FDE2F4E96E6DAD00801D3FB514C46BC9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

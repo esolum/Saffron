@@ -22,6 +22,8 @@ target 'Saffron' do
   pod 'DKImagePickerController'
   pod 'DZNEmptyDataSet'
   pod 'RAReorderableLayout'
+  pod 'WWCalendarTimeSelector'
+  pod 'Hue'
 
   target 'SaffronTests' do
     inherit! :search_paths

@@ -11,6 +11,7 @@
 
 import Foundation
 import Firebase
+import DKImagePickerController
 
 class FirebaseUtil {
     static let url = "https://blazing-heat-9131.firebaseio.com/"
@@ -37,6 +38,11 @@ class FirebaseUtil {
     static var userData: [FIRDataSnapshot]! = []
     static var mealData: [FIRDataSnapshot]! = []
     static fileprivate var _refHandle: FIRDatabaseHandle!
+    static var storage: FIRStorage!
+    static var storageRef: FIRStorageReference!
+    static var imagesRef: FIRStorageReference!
+    static var mealImagesRef: FIRStorageReference!
+    
     
     //Attaches the listeners to the Firebase database lists
     //Called in AppDelegate.swift
@@ -91,7 +97,7 @@ class FirebaseUtil {
             //guard let strongSelf = self else { return }
             //strongSelf.orderData.append(snapshot)
             mealData.append(snapshot)
-            print("New meal is coming!")
+            //print("New meal is coming!")
             mealContentChanged = true
             
             // Unpack meal from Firebase DataSnapshot
@@ -103,21 +109,36 @@ class FirebaseUtil {
             let price = Double(meal[Constants.MealFields.price]!) ?? -1.0
             let description = meal[Constants.MealFields.description] ?? ""
             let shortDesc = meal[Constants.MealFields.shortDesc] ?? ""
+            let servingType = meal[Constants.MealFields.servingType] ?? "other"
+            let dateString = meal[Constants.MealFields.date] ?? ""
+            let date = MealUtils.dateFromString(dateStr: dateString)
+            
             
             if let ingredients = meal[Constants.MealFields.ingredients] {
-                let newMeal = Meal(id: IDGenerator.generateMealID(), name: name, chefId: chefID, url: imgURL, ing: ingredients, price: price, description: description, shortDesc: shortDesc)
+                let newMeal = Meal(id: IDGenerator.generateMealID(), name: name, chefId: chefID, url: imgURL, ing: ingredients, price: price, description: description, shortDesc: shortDesc, servingType: servingType, date: date)
                 meals?.append(newMeal)
                 mealMap![newMeal.getID()] = newMeal
             } else {
-                let newMeal = Meal(id: IDGenerator.generateMealID(), name: name, chefId: chefID, url: imgURL, price: price, description: description, shortDesc: shortDesc)
+                let newMeal = Meal(id: IDGenerator.generateMealID(), name: name, chefId: chefID, url: imgURL, price: price, description: description, shortDesc: shortDesc, servingType: servingType, date: date)
                 meals?.append(newMeal)
                 mealMap![newMeal.getID()] = newMeal
             }
             
         })
+    }
+    
+    //Configures Firebase storage references - called in AppDelegate
+    static func configureStorage() {
+        // Get a reference to the storage service using the default Firebase App
+        storage = FIRStorage.storage()
+        // Create a storage reference from our storage service
+        storageRef = storage.reference()
         
+        // Create a child reference
+        // imagesRef now points to "images"
+        imagesRef = storageRef.child("images")
         
-        
+        mealImagesRef = imagesRef.child("meals")
         
     }
     
@@ -155,15 +176,17 @@ class FirebaseUtil {
                     let price = vals[Constants.MealFields.price] as! Double
                     let description = vals[Constants.MealFields.description] as! String
                     let shortDesc = vals[Constants.MealFields.shortDesc] as! String
+                    let servingType = vals[Constants.MealFields.servingType] as! String
+                    let date = vals[Constants.MealFields.date] as! Date
                     
                     var newMeal: Meal
                     
                     if (vals[Constants.MealFields.ingredients] != nil){
                         let ing = vals[Constants.MealFields.ingredients] as! String
-                        newMeal = Meal(id: IDGenerator.generateMealID(), name: name, chefId: chefID, url: imageUrl, ing: ing, price: price, description: description, shortDesc: shortDesc)
+                        newMeal = Meal(id: IDGenerator.generateMealID(), name: name, chefId: chefID, url: imageUrl, ing: ing, price: price, description: description, shortDesc: shortDesc, servingType: servingType, date: date)
                     }
                     else {
-                        newMeal = Meal(id: IDGenerator.generateMealID(), name: name, chefId: chefID, url: imageUrl, price: price, description: description, shortDesc: shortDesc)
+                        newMeal = Meal(id: IDGenerator.generateMealID(), name: name, chefId: chefID, url: imageUrl, price: price, description: description, shortDesc: shortDesc, servingType: servingType, date: date)
                     }
                     
                     
@@ -230,6 +253,40 @@ class FirebaseUtil {
     }
     
     
+    //MARK: Upload Functions
+    
+    // Upload new meal to Firebase
+    static func submitNewMeal(meal: Meal, assets: [DKAsset]) -> Bool {
+        
+        // Create reference to folder containing this meal's images with id
+        let newMealRef = mealImagesRef.child("\(meal.getID())")
+        
+        // Create a reference to primary image
+        let primaryRef = newMealRef.child("0.png")
+        
+        
+        
+        
+        
+        let primaryAsset = assets[0]
+        primaryAsset.fetchOriginalImage(false, completeBlock: {
+            image, info in
+            let data = UIImagePNGRepresentation(image!)
+            // Upload the file to the path "images/rivers.jpg"
+            let uploadTask = primaryRef.put(data, metadata: nil) { (metadata, error) in
+                guard let metadata = metadata else {
+                    // Uh-oh, an error occurred!
+                    return false
+                }
+                // Metadata contains file metadata such as size, content-type, and download URL.
+                let downloadURL = metadata.downloadURL
+                meal.setImageURL(url: downloadURL)
+            }
+            
+        })
+        
+        return true
+    }
     
     /*static func getFBUsers()->Firebase{
      if(fbUser != nil){

@@ -21,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseUtil.configureDatabase()
         
-        let storage = FIRStorage.storage()
+        FirebaseUtil.configureStorage()
+        
+        
         
         //Set bar tint color
         //UITabBar.appearance().tintColor = UIColor.red

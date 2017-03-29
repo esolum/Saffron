@@ -16,6 +16,7 @@ class AddPhotosViewController: UIViewController, DZNEmptyDataSetSource, DZNEmpty
 
     //MARK: Properties
     var assets: [DKAsset]!
+    var newMeal: Meal!
     
     
     @IBOutlet weak var photoCollectionView: UICollectionView!
@@ -31,6 +32,7 @@ class AddPhotosViewController: UIViewController, DZNEmptyDataSetSource, DZNEmpty
         self.photoCollectionView.dataSource = self
         //self.photoTableView.rowHeight = UITableViewAutomaticDimension
         //self.photoTableView.estimatedRowHeight = 150
+        newMeal = Meal()
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,6 +71,9 @@ class AddPhotosViewController: UIViewController, DZNEmptyDataSetSource, DZNEmpty
             //Callback happens when user dismisses view controller
             self.assets = assets
             self.photoCollectionView.reloadData()
+            
+            
+            
             print("Done and done")
         }
         self.present(pickerController, animated: true, completion: nil)
@@ -152,7 +157,12 @@ class AddPhotosViewController: UIViewController, DZNEmptyDataSetSource, DZNEmpty
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
-        
+        if segue.identifier == "photosToDetails" {
+            let vc = segue.destination as! MealInfoViewController
+            
+            vc.newMeal = newMeal
+            vc.assets = assets
+        }
         
         
     }

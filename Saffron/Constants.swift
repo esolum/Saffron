@@ -34,5 +34,7 @@ struct Constants {
         static let price = "price"
         static let description = "description"
         static let shortDesc = "short_desc"
+        static let servingType = "servingType"
+        static let date = "date"
     }
 }

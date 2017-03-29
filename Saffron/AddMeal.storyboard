@@ -124,7 +124,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Next" id="DKb-Fe-t9g">
                             <color key="tintColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="wr4-gc-pdc" kind="show" id="Ar5-wE-aiB"/>
+                                <segue destination="wr4-gc-pdc" kind="show" identifier="photosToDetails" id="Ar5-wE-aiB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -137,7 +137,7 @@
             </objects>
             <point key="canvasLocation" x="2340" y="512.29385307346331"/>
         </scene>
-        <!--Info-->
+        <!--Add Some Details-->
         <scene sceneID="4xF-xN-Xvl">
             <objects>
                 <viewController id="wr4-gc-pdc" customClass="MealInfoViewController" customModule="Saffron" customModuleProvider="target" sceneMemberID="viewController">
@@ -163,7 +163,10 @@
                                         <color key="value" red="0.80000000000000004" green="0.20000000000000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" red="0.7254902124" green="0.71372550729999995" blue="0.70588237050000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.40000000000000002" green="0.37647058820000001" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
@@ -181,7 +184,10 @@
                                         <color key="value" red="0.80000000000000004" green="0.20000000000000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" red="0.7254902124" green="0.71372550729999995" blue="0.70588237050000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.40000000000000002" green="0.37647058820000001" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
@@ -206,12 +212,15 @@
                                         <color key="value" red="0.80000000000000004" green="0.20000000000000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" red="0.7254902124" green="0.71372550729999995" blue="0.70588237050000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.40000000000000002" green="0.37647058820000001" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="by3-TY-Ipj" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="16" y="455" width="97" height="30"/>
+                                <rect key="frame" x="16" y="455" width="97" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
@@ -224,7 +233,10 @@
                                         <color key="value" red="0.80000000000000004" green="0.20000000000000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" red="0.7254902124" green="0.71372550729999995" blue="0.70588237050000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.40000000000000002" green="0.37647058820000001" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
@@ -236,7 +248,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="serving type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qbr-xT-dbi" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="217" y="455" width="138" height="30"/>
+                                <rect key="frame" x="217" y="455" width="138" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
@@ -249,25 +261,109 @@
                                         <color key="value" red="0.80000000000000004" green="0.20000000000000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" red="0.7254902124" green="0.71372550729999995" blue="0.70588237050000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.40000000000000002" green="0.37647058820000001" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="total number of servings" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7d8-KZ-Sms" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="16" y="526" width="339" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" red="0.58431375029999999" green="0.57647061349999995" blue="0.56862747670000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.80000000000000004" green="0.20000000000000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.40000000000000002" green="0.37647058820000001" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Info" id="ZbJ-WX-g2n">
+                    <navigationItem key="navigationItem" title="Add Some Details" id="ZbJ-WX-g2n">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="vqd-3p-i0P">
                             <color key="tintColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Next" id="e5C-WM-kGg">
                             <color key="tintColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="7pc-Kq-PXf" kind="show" identifier="detailsToTime" id="gSY-cQ-A7W"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="longDescField" destination="fNJ-h3-HlZ" id="SyC-jz-sny"/>
+                        <outlet property="nameField" destination="WRt-84-LVt" id="LiI-yl-BDB"/>
+                        <outlet property="numberServicesField" destination="7d8-KZ-Sms" id="Bx5-Ln-aZh"/>
+                        <outlet property="priceField" destination="by3-TY-Ipj" id="qCX-iZ-lbd"/>
+                        <outlet property="servingField" destination="qbr-xT-dbi" id="NUj-YD-PQP"/>
+                        <outlet property="shortDescField" destination="L2I-5h-nqh" id="Dc2-zo-PCd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZS-bf-RQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3365.5999999999999" y="511.39430284857576"/>
+        </scene>
+        <!--Choose Date-->
+        <scene sceneID="oNt-GA-aDF">
+            <objects>
+                <viewController id="7pc-Kq-PXf" customClass="MealTimeViewController" customModule="Saffron" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vzT-ye-7wr"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZbI-r2-awF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7hK-yd-Zo6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When are you making your dish?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKD-bk-X8y">
+                                <rect key="frame" x="18" y="87" width="339" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3E-Ll-amL">
+                                <rect key="frame" x="20" y="183" width="228" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Lemme see a calendar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentCalendar:" destination="7pc-Kq-PXf" eventType="touchUpInside" id="swp-sU-xXJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose Date" id="HTn-jG-RZC">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="nAU-aA-b4E">
+                            <color key="tintColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="cMv-J0-JgR">
+                            <color key="tintColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="chooseDateButton" destination="C3E-Ll-amL" id="YUz-lE-m8e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2EW-pa-ZsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4260" y="511.39430284857576"/>
         </scene>
         <!--Add Meal-->
         <scene sceneID="Y90-RP-g17">
@@ -294,6 +390,10 @@
         <scene sceneID="juF-l8-zpK">
             <objects>
                 <viewController id="1f6-W8-4ax" customClass="ChoosePhotosViewController" customModule="Saffron" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3PJ-IR-eZJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pak-og-8gx"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dbO-kA-UjF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
