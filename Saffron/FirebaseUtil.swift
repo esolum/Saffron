@@ -271,7 +271,8 @@ class FirebaseUtil {
              Constants.MealFields.name: meal.getName(),
              Constants.MealFields.price: meal.getPrice(),
              Constants.MealFields.servingType: meal.getServingType(),
-             Constants.MealFields.shortDesc: meal.getShortDescription()])
+             Constants.MealFields.shortDesc: meal.getShortDescription(),
+             Constants.MealFields.totalServings: meal.getTotalServings()])
         let newMealKey = newMealRef.key
         
         // Create reference to folder containing this meal's images with id
@@ -294,13 +295,15 @@ class FirebaseUtil {
                     return
                 }
                 // Metadata contains file metadata such as size, content-type, and download URL.
-                let downloadURL = metadata.downloadURL
-                meal.setImageURL(url: (downloadURL()?.path)!)
-                newMealRef.updateChildValues([Constants.MealFields.imgURL: meal.getImageURL()], withCompletionBlock: { error, ref in
-                    if let error = error {
-                        print(error.localizedDescription)
-                    }
-                })
+                if let downloadURL = metadata.downloadURL()?.absoluteString {
+                    meal.setImageURL(url: downloadURL)
+                    newMealRef.updateChildValues([Constants.MealFields.imgURL: meal.getImageURL()], withCompletionBlock: { error, ref in
+                        if let error = error {
+                            print(error.localizedDescription)
+                        }
+                    })
+                }
+                
                 //newMealRef.updateChildValues([Constants.MealFields.imgURL: meal.getImageURL()])
                 
                 

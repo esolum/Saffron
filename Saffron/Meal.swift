@@ -166,6 +166,9 @@ class Meal {
         return MealUtils.stringFromDate(date: date, format: "yyyy-MM-ddTHH:mm:ssZ")
     }
     
+    func getTotalServings() -> Int {
+        return totalServings
+    }
     
     
 }
