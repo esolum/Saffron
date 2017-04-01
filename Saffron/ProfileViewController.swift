@@ -7,9 +7,17 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileViewController: UIViewController {
-
+    
+    // MARK: - Properties
+    
+    @IBOutlet weak var profileImageView: UIImageView!
+    
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var settingsButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +28,26 @@ class ProfileViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - Button actions
+    
+    @IBAction func logoutPressed(_ sender: UIButton) {
+        do {
+            try FIRAuth.auth()?.signOut()
+            if let user = FirebaseUtil.getCurrentUserData() {
+                print("Something's wrong")
+            }
+            let vc = (
+                storyboard?.instantiateViewController(
+                    withIdentifier: "login")
+                )!
+            present(vc, animated: true, completion: nil)
+        } catch let error as Error {
+            print(error.localizedDescription)
+        }
+        
+    }
+    
     
 
     /*

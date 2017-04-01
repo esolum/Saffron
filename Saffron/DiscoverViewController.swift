@@ -15,7 +15,7 @@ class DiscoverViewController: UIViewController {
         super.viewDidLoad()
         
         //If user is not logged in, show login controller
-        if FirebaseUtil.getCurrentUserData != nil {
+        if FirebaseUtil.getCurrentUserData() != nil {
             // User is signed in.
             print("Signed in")
         } else {
@@ -26,8 +26,6 @@ class DiscoverViewController: UIViewController {
                 storyboard?.instantiateViewController(
                     withIdentifier: "login")
                 )!
-            //vc.view.backgroundColor = UIColor.orange()
-            
             present(vc, animated: true, completion: nil)
             
             

@@ -26,7 +26,9 @@ class LoginViewController: UIViewController {
         
         //Create gradient for background
         let gradient = [UIUtils.coral, UIUtils.orange, UIUtils.yellow].gradient()
-        self.view.layer.addSublayer(gradient)
+        gradient.frame = self.view.bounds
+        self.view.layer.insertSublayer(gradient, at: 0)
+        //vc.view.backgroundColor = UIColor.orange()
     }
 
     override func didReceiveMemoryWarning() {
