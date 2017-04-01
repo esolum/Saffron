@@ -69,12 +69,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SkyFloatingLabelTextField.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TBTextViewWithCharLimit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TextFieldEffects.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>UIColor_Hex_Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Validator.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -92,12 +107,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1AD28D27150C8C9FEDDBD8E7E8128C77</key>
+		<key>0576DF419BEEDF3B0ADCC8DA373983A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>39E4059409A0D460B9EA8F23D62C0B26</key>
+		<key>1ECF44A7EFFBBA0FB2F864A18EB5F84D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>38DAE8937AD380E352A6E4E3952264C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,7 +132,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5813CCBFBB3FEF34E0F9CB788335450A</key>
+		<key>602DFEF5001FA89EAF97DDDB6BA086FE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,7 +142,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>83C79D75F9D14F654DA2F3DAA1077A15</key>
+		<key>8B5251D6FE5E82CBE2167113FEB1A713</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>907E3C80907700EE31E8A58C2AFB03B6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,7 +157,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A21FC24AF4EB2E7A476178B6AD9E95D2</key>
+		<key>A95C646799EF1A4B4855ACAACABB9297</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -147,6 +172,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>CA84B8EDCAEA435E58FC39E197A8EC65</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D29ECE69EF439D1FF5B5E9EB40FDFFE0</key>
 		<dict>
 			<key>primary</key>
@@ -157,12 +187,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D4B669F499DEDDD77D0BCE413548A289</key>
+		<key>DCF3895548AE79FD3CBFBF9ABBC14CA4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DCF3895548AE79FD3CBFBF9ABBC14CA4</key>
+		<key>E3BD53276BDF54536C9798495A93EB6D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -172,7 +202,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FDE2F4E96E6DAD00801D3FB514C46BC9</key>
+		<key>F4934ADA1E6A774920E567F986049DCD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

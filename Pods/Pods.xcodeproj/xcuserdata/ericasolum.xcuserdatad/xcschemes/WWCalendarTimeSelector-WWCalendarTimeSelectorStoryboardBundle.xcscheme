@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '39E4059409A0D460B9EA8F23D62C0B26'
+               BlueprintIdentifier = '907E3C80907700EE31E8A58C2AFB03B6'
                BlueprintName = 'WWCalendarTimeSelector-WWCalendarTimeSelectorStoryboardBundle'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'WWCalendarTimeSelectorStoryboardBundle.bundle'>

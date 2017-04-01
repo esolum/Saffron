@@ -14,6 +14,10 @@ class MealTimeViewController: UIViewController, WWCalendarTimeSelectorProtocol {
     
     //MARK: Properties
     @IBOutlet weak var chooseDateButton: UIButton!
+    @IBOutlet weak var chosenTimeLabel: UILabel!
+    @IBOutlet weak var doneButton: UIBarButtonItem!
+    @IBOutlet weak var backButton: UIBarButtonItem!
+    
     var newMeal: Meal!
     var assets: [DKAsset]!
 
@@ -21,6 +25,7 @@ class MealTimeViewController: UIViewController, WWCalendarTimeSelectorProtocol {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        doneButton.isEnabled = false
     }
 
     //Button action methods
@@ -51,9 +56,15 @@ class MealTimeViewController: UIViewController, WWCalendarTimeSelectorProtocol {
         present(selector, animated: true, completion: nil)
     }
     
+    @IBAction func donePressed(_ sender: UIBarButtonItem) {
+        FirebaseUtil.submitNewMeal(meal: newMeal, assets: assets)
+    }
+    
+    
     func WWCalendarTimeSelectorDone(_ selector: WWCalendarTimeSelector, date: Date) {
-        print(date)
+        doneButton.isEnabled = true
         newMeal.setDate(date: date)
+        chosenTimeLabel.text = MealUtils.stringFromDate(date: date, format: "MMM d, h:mm a")
     }
     
     

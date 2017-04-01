@@ -11,12 +11,18 @@ import ImageLoader
 import NVActivityIndicatorView
 import AMScrollingNavbar
 
+
 class FollowingTableViewController: UITableViewController {
 
     //MARK: Properties
     var meals = [Meal]()
     var chosenMeal: Meal?
     var images = [String]()
+    
+    let kCloseCellHeight: CGFloat = 100
+    let kOpenCellHeight: CGFloat = 214
+    var cellHeights = [CGFloat]()
+    let kRowsCount = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +37,7 @@ class FollowingTableViewController: UITableViewController {
         //Set up cells for automatic height
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 269
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -87,12 +94,13 @@ class FollowingTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+        //return kRowsCount
         return meals.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "mealCell", for: indexPath) as! FollowingTableViewCell
 
         // Configure the cell...
@@ -105,11 +113,8 @@ class FollowingTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //chosenFood = foods[indexPath.row]
-        chosenMeal = meals[indexPath.row]
-        //self.performSegue(withIdentifier: "detail", sender: self)
-    }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detail"{
@@ -117,11 +122,9 @@ class FollowingTableViewController: UITableViewController {
             let index = self.tableView.indexPathForSelectedRow
                 let selected = meals[(index?.row)!]
                 vc?.meal = selected
-                print("Geronimo")
             
         }
     }
-    
 
     /*
     // Override to support conditional editing of the table view.

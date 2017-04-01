@@ -1,0 +1,6 @@
+framework module TBTextViewWithCharLimit {
+  umbrella header "TBTextViewWithCharLimit-umbrella.h"
+
+  export *
+  module * { export * }
+}

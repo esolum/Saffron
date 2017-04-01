@@ -18,7 +18,7 @@ class AddPhotosViewController: UIViewController, DZNEmptyDataSetSource, DZNEmpty
     var assets: [DKAsset]!
     var newMeal: Meal!
     
-    
+    @IBOutlet weak var nextButton: UIBarButtonItem!
     @IBOutlet weak var photoCollectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -33,6 +33,7 @@ class AddPhotosViewController: UIViewController, DZNEmptyDataSetSource, DZNEmpty
         //self.photoTableView.rowHeight = UITableViewAutomaticDimension
         //self.photoTableView.estimatedRowHeight = 150
         newMeal = Meal()
+        nextButton.isEnabled = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,10 +72,8 @@ class AddPhotosViewController: UIViewController, DZNEmptyDataSetSource, DZNEmpty
             //Callback happens when user dismisses view controller
             self.assets = assets
             self.photoCollectionView.reloadData()
+            self.nextButton.isEnabled = true
             
-            
-            
-            print("Done and done")
         }
         self.present(pickerController, animated: true, completion: nil)
     }

@@ -26,6 +26,9 @@
 		6D26CB8F1E8B4A430046D35D /* mealUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D26CB8E1E8B4A430046D35D /* mealUtils.swift */; };
 		6D26CB901E8B4A430046D35D /* mealUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D26CB8E1E8B4A430046D35D /* mealUtils.swift */; };
 		6D26CB911E8B4A430046D35D /* mealUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D26CB8E1E8B4A430046D35D /* mealUtils.swift */; };
+		6D26CB971E8C63080046D35D /* ValidationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D26CB961E8C63080046D35D /* ValidationUtils.swift */; };
+		6D26CB981E8C63080046D35D /* ValidationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D26CB961E8C63080046D35D /* ValidationUtils.swift */; };
+		6D26CB991E8C63080046D35D /* ValidationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D26CB961E8C63080046D35D /* ValidationUtils.swift */; };
 		6D4FE3701E7B3B79007C9CC2 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6D4FE36B1E7B3B79007C9CC2 /* Montserrat-Bold.otf */; };
 		6D4FE3711E7B3B79007C9CC2 /* Montserrat-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6D4FE36C1E7B3B79007C9CC2 /* Montserrat-Hairline.otf */; };
 		6D4FE3721E7B3B79007C9CC2 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6D4FE36D1E7B3B79007C9CC2 /* Montserrat-Light.otf */; };
@@ -74,6 +77,9 @@
 		6D98B8241E5608760074B05B /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D98B8231E5608760074B05B /* MealDetailViewController.swift */; };
 		6D98B8251E5608760074B05B /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D98B8231E5608760074B05B /* MealDetailViewController.swift */; };
 		6D98B8261E5608760074B05B /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D98B8231E5608760074B05B /* MealDetailViewController.swift */; };
+		6D9D0B101E8C7FF30059AF6B /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D0B0F1E8C7FF30059AF6B /* FoldingCell.swift */; };
+		6D9D0B111E8C7FF30059AF6B /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D0B0F1E8C7FF30059AF6B /* FoldingCell.swift */; };
+		6D9D0B121E8C7FF30059AF6B /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D0B0F1E8C7FF30059AF6B /* FoldingCell.swift */; };
 		6DB1C5DB1E6A146C0050A562 /* FirebaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1C5DA1E6A146C0050A562 /* FirebaseUtil.swift */; };
 		6DB1C5DC1E6A146C0050A562 /* FirebaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1C5DA1E6A146C0050A562 /* FirebaseUtil.swift */; };
 		6DB1C5DD1E6A146C0050A562 /* FirebaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1C5DA1E6A146C0050A562 /* FirebaseUtil.swift */; };
@@ -128,6 +134,7 @@
 		6D25A6B11E89F4E200F12B3D /* MealTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTimeViewController.swift; sourceTree = "<group>"; };
 		6D26CB8A1E8B46580046D35D /* UIUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
 		6D26CB8E1E8B4A430046D35D /* mealUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mealUtils.swift; sourceTree = "<group>"; };
+		6D26CB961E8C63080046D35D /* ValidationUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationUtils.swift; sourceTree = "<group>"; };
 		6D4FE36B1E7B3B79007C9CC2 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
 		6D4FE36C1E7B3B79007C9CC2 /* Montserrat-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Hairline.otf"; sourceTree = "<group>"; };
 		6D4FE36D1E7B3B79007C9CC2 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
@@ -151,6 +158,7 @@
 		6D98B8171E56031C0074B05B /* FollowingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingTableViewCell.swift; sourceTree = "<group>"; };
 		6D98B81F1E56084F0074B05B /* ChefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChefViewController.swift; sourceTree = "<group>"; };
 		6D98B8231E5608760074B05B /* MealDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailViewController.swift; sourceTree = "<group>"; };
+		6D9D0B0F1E8C7FF30059AF6B /* FoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldingCell.swift; sourceTree = "<group>"; };
 		6DB1C5DA1E6A146C0050A562 /* FirebaseUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseUtil.swift; sourceTree = "<group>"; };
 		6DB1C5DF1E6A157B0050A562 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6DB1C5EB1E6A3D1E0050A562 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -241,6 +249,7 @@
 		6D98B80F1E56011F0074B05B /* Following */ = {
 			isa = PBXGroup;
 			children = (
+				6D9D0B0F1E8C7FF30059AF6B /* FoldingCell.swift */,
 				6D98B8231E5608760074B05B /* MealDetailViewController.swift */,
 				6D7675ED1E48BDC700A07969 /* Following.storyboard */,
 				6D98B8171E56031C0074B05B /* FollowingTableViewCell.swift */,
@@ -274,11 +283,11 @@
 				6D7675F51E48BE5A00A07969 /* AddMeal.storyboard */,
 				6D4FE3751E7B3D43007C9CC2 /* AddPhotosViewController.swift */,
 				6D1907251E831E39000F9B8D /* PhotoTableViewCell.swift */,
-				6D7675E71E48BB0A00A07969 /* AddMealViewController.swift */,
 				6D4FE3781E7B3D6F007C9CC2 /* MealInfoViewController.swift */,
 				6D25A6B11E89F4E200F12B3D /* MealTimeViewController.swift */,
 				6D1907291E8340F0000F9B8D /* PhotoViewCell.swift */,
 				6D19072D1E834569000F9B8D /* RACollectionViewCell.swift */,
+				6D7675E71E48BB0A00A07969 /* AddMealViewController.swift */,
 			);
 			name = "Add Meal";
 			sourceTree = "<group>";
@@ -286,6 +295,7 @@
 		6DB1C5DE1E6A14720050A562 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				6D26CB961E8C63080046D35D /* ValidationUtils.swift */,
 				6D26CB8A1E8B46580046D35D /* UIUtils.swift */,
 				6DB1C5DA1E6A146C0050A562 /* FirebaseUtil.swift */,
 				6DB1C5EF1E6A3D6D0050A562 /* IDGenerator.swift */,
@@ -682,6 +692,7 @@
 				6DB1C5EC1E6A3D1E0050A562 /* Constants.swift in Sources */,
 				6DB1C5DB1E6A146C0050A562 /* FirebaseUtil.swift in Sources */,
 				6D98B8201E56084F0074B05B /* ChefViewController.swift in Sources */,
+				6D26CB971E8C63080046D35D /* ValidationUtils.swift in Sources */,
 				6D26CB8B1E8B46580046D35D /* UIUtils.swift in Sources */,
 				6D7675F91E48BE8A00A07969 /* OrdersViewController.swift in Sources */,
 				6DB1C5E01E6A157B0050A562 /* User.swift in Sources */,
@@ -700,6 +711,7 @@
 				6DD1697E1E48A524009F7690 /* AppDelegate.swift in Sources */,
 				6D98B8061E56006D0074B05B /* Meal.swift in Sources */,
 				6D98B8141E5602DE0074B05B /* FollowingTableViewController.swift in Sources */,
+				6D9D0B101E8C7FF30059AF6B /* FoldingCell.swift in Sources */,
 				6D25A6B21E89F4E200F12B3D /* MealTimeViewController.swift in Sources */,
 				6DD169801E48A524009F7690 /* FirstViewController.swift in Sources */,
 			);
@@ -716,12 +728,14 @@
 				6D19072B1E8340F0000F9B8D /* PhotoViewCell.swift in Sources */,
 				6D26CB901E8B4A430046D35D /* mealUtils.swift in Sources */,
 				6DB1C5ED1E6A3D1E0050A562 /* Constants.swift in Sources */,
+				6D9D0B111E8C7FF30059AF6B /* FoldingCell.swift in Sources */,
 				6DB1C5DC1E6A146C0050A562 /* FirebaseUtil.swift in Sources */,
 				6D1907271E831E39000F9B8D /* PhotoTableViewCell.swift in Sources */,
 				6D98B8191E56031C0074B05B /* FollowingTableViewCell.swift in Sources */,
 				6D7242B81E5F10A100F2473A /* CustomTabBarController.swift in Sources */,
 				6D19072F1E834569000F9B8D /* RACollectionViewCell.swift in Sources */,
 				6D98B8151E5602DE0074B05B /* FollowingTableViewController.swift in Sources */,
+				6D26CB981E8C63080046D35D /* ValidationUtils.swift in Sources */,
 				6D98B8211E56084F0074B05B /* ChefViewController.swift in Sources */,
 				6DD169951E48A524009F7690 /* SaffronTests.swift in Sources */,
 				6D98B8251E5608760074B05B /* MealDetailViewController.swift in Sources */,
@@ -755,6 +769,8 @@
 				6D7675E91E48BB0A00A07969 /* AddMealViewController.swift in Sources */,
 				6D98B8081E56006D0074B05B /* Meal.swift in Sources */,
 				6D25A6B41E89F4E200F12B3D /* MealTimeViewController.swift in Sources */,
+				6D26CB991E8C63080046D35D /* ValidationUtils.swift in Sources */,
+				6D9D0B121E8C7FF30059AF6B /* FoldingCell.swift in Sources */,
 				6D7676071E48C12900A07969 /* DiscoverViewController.swift in Sources */,
 				6D26CB911E8B4A430046D35D /* mealUtils.swift in Sources */,
 				6D19072C1E8340F0000F9B8D /* PhotoViewCell.swift in Sources */,

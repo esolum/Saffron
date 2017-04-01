@@ -24,6 +24,9 @@ target 'Saffron' do
   pod 'RAReorderableLayout'
   pod 'WWCalendarTimeSelector'
   pod 'Hue'
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
+  pod 'Validator'
+  pod "TBTextViewWithCharLimit"
 
   target 'SaffronTests' do
     inherit! :search_paths

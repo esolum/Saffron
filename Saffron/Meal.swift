@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Validator
 
 enum ServingType {
     case slice
@@ -17,7 +18,7 @@ enum ServingType {
     
 }
 
-class Meal{
+class Meal {
     private var name: String
     private var id: String
     private var chefId: String
@@ -28,6 +29,7 @@ class Meal{
     private var shortDesc: String
     private var servingType: String
     private var date: Date
+    
     
     init(id: String, name: String, chefId: String, url: String, ing: String, price: Double, description: String, shortDesc: String, servingType: String, date: Date){
         self.id = id
@@ -150,6 +152,10 @@ class Meal{
     
     func getDate() -> Date {
         return date
+    }
+    
+    func getDateAsString() -> String {
+        return MealUtils.stringFromDate(date: date, format: "yyyy-MM-ddTHH:mm:ssZ")
     }
     
     

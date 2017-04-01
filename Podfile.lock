@@ -54,8 +54,11 @@ PODS:
   - NVActivityIndicatorView (3.5)
   - RAMAnimatedTabBarController (2.0.13)
   - RAReorderableLayout (0.6.1)
+  - SkyFloatingLabelTextField (3.0.0)
+  - TBTextViewWithCharLimit (0.1.1)
   - TextFieldEffects (1.3.1)
   - UIColor_Hex_Swift (3.0.2)
+  - Validator (2.1.1)
   - WWCalendarTimeSelector (1.3.13)
 
 DEPENDENCIES:
@@ -74,8 +77,11 @@ DEPENDENCIES:
   - NVActivityIndicatorView (~> 3.5)
   - RAMAnimatedTabBarController (~> 2.0.13)
   - RAReorderableLayout
+  - SkyFloatingLabelTextField (~> 3.0)
+  - TBTextViewWithCharLimit
   - TextFieldEffects (~> 1.3)
   - UIColor_Hex_Swift (~> 3.0.2)
+  - Validator
   - WWCalendarTimeSelector
 
 SPEC CHECKSUMS:
@@ -100,10 +106,13 @@ SPEC CHECKSUMS:
   NVActivityIndicatorView: e5252b082f93885f0bfc24c318719b4eaabcd37b
   RAMAnimatedTabBarController: 2510f3b66954c3f77ea1042a35d34df8f5f3b604
   RAReorderableLayout: 5b6b87dd4022ee1747fd475623b14f5df940f754
+  SkyFloatingLabelTextField: 35bc0c2653ad73c5fd8b7a34cfedf09c94367a1a
+  TBTextViewWithCharLimit: a71a8bdc5d5b9418c17851dbee4b16deba4bd797
   TextFieldEffects: faa47d428ee8eafb781a8413ac4345420d2328c4
   UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
+  Validator: b1793fbfd0046097551d0edd18e2c30792d69ef5
   WWCalendarTimeSelector: 334f8b4ff16367d75fb9f21073203641fbd3d749
 
-PODFILE CHECKSUM: 10d7cf400598c9f11bc9347933882b65b52d6e43
+PODFILE CHECKSUM: d8c9c1e12396a89f30c1ab482e6d0af04accfa6d
 
 COCOAPODS: 1.2.0

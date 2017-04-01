@@ -177,7 +177,8 @@ class FirebaseUtil {
                     let description = vals[Constants.MealFields.description] as! String
                     let shortDesc = vals[Constants.MealFields.shortDesc] as! String
                     let servingType = vals[Constants.MealFields.servingType] as! String
-                    let date = vals[Constants.MealFields.date] as! Date
+                    let dateString = vals[Constants.MealFields.date] as! String
+                    let date = MealUtils.dateFromString(dateStr: dateString)
                     
                     var newMeal: Meal
                     
@@ -264,23 +265,35 @@ class FirebaseUtil {
         // Create a reference to primary image
         let primaryRef = newMealRef.child("0.png")
         
-        
-        
-        
+
         
         let primaryAsset = assets[0]
         primaryAsset.fetchOriginalImage(false, completeBlock: {
             image, info in
             let data = UIImagePNGRepresentation(image!)
             // Upload the file to the path "images/rivers.jpg"
-            let uploadTask = primaryRef.put(data, metadata: nil) { (metadata, error) in
+            let uploadTask = primaryRef.put(data!, metadata: nil) { (metadata, error) in
                 guard let metadata = metadata else {
                     // Uh-oh, an error occurred!
-                    return false
+                    print(error)
+                    return
                 }
                 // Metadata contains file metadata such as size, content-type, and download URL.
                 let downloadURL = metadata.downloadURL
-                meal.setImageURL(url: downloadURL)
+                meal.setImageURL(url: (downloadURL()?.path)!)
+                
+                self.ref.child("meals").child(meal.getID()).setValue(
+                    [Constants.MealFields.chefID: meal.getChefId(),
+                     Constants.MealFields.date: meal.getDate(),
+                     Constants.MealFields.description: meal.getDescription(),
+                     Constants.MealFields.imgURL: meal.getImageURL(),
+                     Constants.MealFields.ingredients: meal.getIngredients(),
+                     Constants.MealFields.name: meal.getName(),
+                     Constants.MealFields.price: meal.getPrice(),
+                     Constants.MealFields.servingType: meal.getServingType(),
+                     Constants.MealFields.shortDesc: meal.getShortDescription()])
+                
+                print("Upload successful?")
             }
             
         })
