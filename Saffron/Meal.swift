@@ -29,9 +29,10 @@ class Meal {
     private var shortDesc: String
     private var servingType: String
     private var date: Date
+    private var totalServings: Int
     
     
-    init(id: String, name: String, chefId: String, url: String, ing: String, price: Double, description: String, shortDesc: String, servingType: String, date: Date){
+    init(id: String, name: String, chefId: String, url: String, ing: String, price: Double, description: String, shortDesc: String, servingType: String, date: Date, totalServings: Int){
         self.id = id
         self.name = name
         self.chefId = chefId
@@ -42,9 +43,10 @@ class Meal {
         self.shortDesc = shortDesc
         self.servingType = servingType
         self.date = date
+        self.totalServings = totalServings
     }
     
-    init(id: String, name: String, chefId: String, url: String, price: Double, description: String, shortDesc: String, servingType: String, date: Date){
+    init(id: String, name: String, chefId: String, url: String, price: Double, description: String, shortDesc: String, servingType: String, date: Date, totalServings: Int){
         self.id = id
         self.name = name
         self.chefId = chefId
@@ -54,6 +56,7 @@ class Meal {
         self.shortDesc = shortDesc
         self.servingType = servingType
         self.date = date
+        self.totalServings = totalServings
     }
     
     init() {
@@ -67,6 +70,7 @@ class Meal {
         self.shortDesc = ""
         self.servingType = ""
         self.date = Date()
+        self.totalServings = 0
     }
     
     /* Set functions */
@@ -108,6 +112,10 @@ class Meal {
     
     func setDate(date: Date) {
         self.date = date
+    }
+    
+    func setTotalServings(servings: Int) {
+        self.totalServings = servings
     }
     
     /* Get functions */

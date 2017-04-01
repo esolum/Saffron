@@ -37,7 +37,7 @@ class ValidationUtils {
     static let maxSmallLengthRule = ValidationRuleLength(max: 20, error: ValidationError(message: "Must be less than 20 characters"))
     static let maxMedLengthRule = ValidationRuleLength(max: 140, error: ValidationError(message: "Must be less than 140 characters"))
     static let maxLongLengthRule = ValidationRuleLength(max: 1000, error: ValidationError(message: "Must be less than 1000 characters"))
-    static let floatRequiredRule = ValidationRuleRequired<Float>(error: ValidationError(message: "Required"))
+    static let doubleRequiredRule = ValidationRuleRequired<Double>(error: ValidationError(message: "Required"))
     static let intRequiredRule = ValidationRuleRequired<Int>(error: ValidationError(message: "Required"))
 }
 

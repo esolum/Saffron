@@ -59,6 +59,12 @@
 		6D7676041E48BFB800A07969 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7676021E48BFB800A07969 /* Profile.storyboard */; };
 		6D7676061E48C12900A07969 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7676051E48C12900A07969 /* DiscoverViewController.swift */; };
 		6D7676071E48C12900A07969 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7676051E48C12900A07969 /* DiscoverViewController.swift */; };
+		6D95611D1E9027E800EBA49B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D95611C1E9027E800EBA49B /* LoginViewController.swift */; };
+		6D95611E1E9027E800EBA49B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D95611C1E9027E800EBA49B /* LoginViewController.swift */; };
+		6D95611F1E9027E800EBA49B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D95611C1E9027E800EBA49B /* LoginViewController.swift */; };
+		6D9561221E90280800EBA49B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D9561211E90280800EBA49B /* Login.storyboard */; };
+		6D9561231E90280800EBA49B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D9561211E90280800EBA49B /* Login.storyboard */; };
+		6D9561241E90280800EBA49B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D9561211E90280800EBA49B /* Login.storyboard */; };
 		6D98B8061E56006D0074B05B /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D98B8051E56006D0074B05B /* Meal.swift */; };
 		6D98B8071E56006D0074B05B /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D98B8051E56006D0074B05B /* Meal.swift */; };
 		6D98B8081E56006D0074B05B /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D98B8051E56006D0074B05B /* Meal.swift */; };
@@ -152,6 +158,8 @@
 		6D7675FF1E48BF9A00A07969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Orders.storyboard; sourceTree = "<group>"; };
 		6D7676021E48BFB800A07969 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		6D7676051E48C12900A07969 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		6D95611C1E9027E800EBA49B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6D9561211E90280800EBA49B /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		6D98B8051E56006D0074B05B /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		6D98B8091E5600A70074B05B /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		6D98B8131E5602DE0074B05B /* FollowingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingTableViewController.swift; sourceTree = "<group>"; };
@@ -225,6 +233,15 @@
 				A4D4DBFF27664DE8E6771AE1 /* Pods-SaffronUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D9561201E9027EE00EBA49B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6D95611C1E9027E800EBA49B /* LoginViewController.swift */,
+				6D9561211E90280800EBA49B /* Login.storyboard */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		6D98B80D1E5600DB0074B05B /* Discover */ = {
@@ -340,6 +357,7 @@
 				6DD1697F1E48A524009F7690 /* FirstViewController.swift */,
 				6DD169811E48A524009F7690 /* SecondViewController.swift */,
 				6DB1C5DE1E6A14720050A562 /* Utils */,
+				6D9561201E9027EE00EBA49B /* Login */,
 				6D98B80D1E5600DB0074B05B /* Discover */,
 				6D98B80F1E56011F0074B05B /* Following */,
 				6D98B8121E56019A0074B05B /* Add Meal */,
@@ -511,6 +529,7 @@
 				6DD9D2121E48AD5200547454 /* GoogleService-Info.plist in Resources */,
 				6D4FE3731E7B3B79007C9CC2 /* Montserrat-Regular.otf in Resources */,
 				6DD169871E48A524009F7690 /* Assets.xcassets in Resources */,
+				6D9561221E90280800EBA49B /* Login.storyboard in Resources */,
 				6D4FE3701E7B3B79007C9CC2 /* Montserrat-Bold.otf in Resources */,
 				6DD169851E48A524009F7690 /* Main.storyboard in Resources */,
 				6D7676031E48BFB800A07969 /* Profile.storyboard in Resources */,
@@ -524,6 +543,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D9561231E90280800EBA49B /* Login.storyboard in Resources */,
 				6DD9D2131E48AD5200547454 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,6 +554,7 @@
 			files = (
 				6D7676041E48BFB800A07969 /* Profile.storyboard in Resources */,
 				6DD9D2141E48AD5200547454 /* GoogleService-Info.plist in Resources */,
+				6D9561241E90280800EBA49B /* Login.storyboard in Resources */,
 				6D7675F71E48BE5A00A07969 /* AddMeal.storyboard in Resources */,
 				6D7676011E48BF9A00A07969 /* Orders.storyboard in Resources */,
 				6D7675F01E48BDC700A07969 /* Following.storyboard in Resources */,
@@ -691,6 +712,7 @@
 				6D1907261E831E39000F9B8D /* PhotoTableViewCell.swift in Sources */,
 				6DB1C5EC1E6A3D1E0050A562 /* Constants.swift in Sources */,
 				6DB1C5DB1E6A146C0050A562 /* FirebaseUtil.swift in Sources */,
+				6D95611D1E9027E800EBA49B /* LoginViewController.swift in Sources */,
 				6D98B8201E56084F0074B05B /* ChefViewController.swift in Sources */,
 				6D26CB971E8C63080046D35D /* ValidationUtils.swift in Sources */,
 				6D26CB8B1E8B46580046D35D /* UIUtils.swift in Sources */,
@@ -721,6 +743,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D95611E1E9027E800EBA49B /* LoginViewController.swift in Sources */,
 				6D26CB8C1E8B46580046D35D /* UIUtils.swift in Sources */,
 				6DB1C5F11E6A3D6D0050A562 /* IDGenerator.swift in Sources */,
 				6D25A6B31E89F4E200F12B3D /* MealTimeViewController.swift in Sources */,
@@ -748,6 +771,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D95611F1E9027E800EBA49B /* LoginViewController.swift in Sources */,
 				6DB1C5F21E6A3D6D0050A562 /* IDGenerator.swift in Sources */,
 				6DD169A01E48A524009F7690 /* SaffronUITests.swift in Sources */,
 				6D98B81A1E56031C0074B05B /* FollowingTableViewCell.swift in Sources */,

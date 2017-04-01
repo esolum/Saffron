@@ -110,16 +110,17 @@ class FirebaseUtil {
             let description = meal[Constants.MealFields.description] ?? ""
             let shortDesc = meal[Constants.MealFields.shortDesc] ?? ""
             let servingType = meal[Constants.MealFields.servingType] ?? "other"
-            let dateString = meal[Constants.MealFields.date] ?? ""
-            let date = MealUtils.dateFromString(dateStr: dateString)
+            let dateInterval = Double(meal[Constants.MealFields.date]!) ?? 1.0
+            let date = Date(timeIntervalSince1970: dateInterval)
+            let totalServings = Int(meal[Constants.MealFields.totalServings]!) ?? 0
             
             
             if let ingredients = meal[Constants.MealFields.ingredients] {
-                let newMeal = Meal(id: IDGenerator.generateMealID(), name: name, chefId: chefID, url: imgURL, ing: ingredients, price: price, description: description, shortDesc: shortDesc, servingType: servingType, date: date)
+                let newMeal = Meal(id: IDGenerator.generateMealID(), name: name, chefId: chefID, url: imgURL, ing: ingredients, price: price, description: description, shortDesc: shortDesc, servingType: servingType, date: date, totalServings: totalServings)
                 meals?.append(newMeal)
                 mealMap![newMeal.getID()] = newMeal
             } else {
-                let newMeal = Meal(id: IDGenerator.generateMealID(), name: name, chefId: chefID, url: imgURL, price: price, description: description, shortDesc: shortDesc, servingType: servingType, date: date)
+                let newMeal = Meal(id: IDGenerator.generateMealID(), name: name, chefId: chefID, url: imgURL, price: price, description: description, shortDesc: shortDesc, servingType: servingType, date: date, totalServings: totalServings)
                 meals?.append(newMeal)
                 mealMap![newMeal.getID()] = newMeal
             }
@@ -177,17 +178,18 @@ class FirebaseUtil {
                     let description = vals[Constants.MealFields.description] as! String
                     let shortDesc = vals[Constants.MealFields.shortDesc] as! String
                     let servingType = vals[Constants.MealFields.servingType] as! String
-                    let dateString = vals[Constants.MealFields.date] as! String
-                    let date = MealUtils.dateFromString(dateStr: dateString)
+                    let dateInterval = vals[Constants.MealFields.date] as! Double
+                    let date = Date(timeIntervalSince1970: dateInterval)
+                    let totalServings = vals[Constants.MealFields.totalServings] as! Int
                     
                     var newMeal: Meal
                     
                     if (vals[Constants.MealFields.ingredients] != nil){
                         let ing = vals[Constants.MealFields.ingredients] as! String
-                        newMeal = Meal(id: IDGenerator.generateMealID(), name: name, chefId: chefID, url: imageUrl, ing: ing, price: price, description: description, shortDesc: shortDesc, servingType: servingType, date: date)
+                        newMeal = Meal(id: IDGenerator.generateMealID(), name: name, chefId: chefID, url: imageUrl, ing: ing, price: price, description: description, shortDesc: shortDesc, servingType: servingType, date: date, totalServings: totalServings)
                     }
                     else {
-                        newMeal = Meal(id: IDGenerator.generateMealID(), name: name, chefId: chefID, url: imageUrl, price: price, description: description, shortDesc: shortDesc, servingType: servingType, date: date)
+                        newMeal = Meal(id: IDGenerator.generateMealID(), name: name, chefId: chefID, url: imageUrl, price: price, description: description, shortDesc: shortDesc, servingType: servingType, date: date, totalServings: totalServings)
                     }
                     
                     
@@ -259,11 +261,24 @@ class FirebaseUtil {
     // Upload new meal to Firebase
     static func submitNewMeal(meal: Meal, assets: [DKAsset]) -> Bool {
         
+        let newMealRef = self.ref.child("meals").childByAutoId()
+        newMealRef.setValue(
+            [Constants.MealFields.chefID: meal.getChefId(),
+             Constants.MealFields.date: meal.getDate().timeIntervalSince1970,
+             Constants.MealFields.description: meal.getDescription(),
+             Constants.MealFields.imgURL: meal.getImageURL(),
+             Constants.MealFields.ingredients: meal.getIngredients(),
+             Constants.MealFields.name: meal.getName(),
+             Constants.MealFields.price: meal.getPrice(),
+             Constants.MealFields.servingType: meal.getServingType(),
+             Constants.MealFields.shortDesc: meal.getShortDescription()])
+        let newMealKey = newMealRef.key
+        
         // Create reference to folder containing this meal's images with id
-        let newMealRef = mealImagesRef.child("\(meal.getID())")
+        let newMealImagesRef = mealImagesRef.child("\(newMealKey)")
         
         // Create a reference to primary image
-        let primaryRef = newMealRef.child("0.png")
+        let primaryRef = newMealImagesRef.child("0.png")
         
 
         
@@ -281,17 +296,15 @@ class FirebaseUtil {
                 // Metadata contains file metadata such as size, content-type, and download URL.
                 let downloadURL = metadata.downloadURL
                 meal.setImageURL(url: (downloadURL()?.path)!)
+                newMealRef.updateChildValues([Constants.MealFields.imgURL: meal.getImageURL()], withCompletionBlock: { error, ref in
+                    if let error = error {
+                        print(error.localizedDescription)
+                    }
+                })
+                //newMealRef.updateChildValues([Constants.MealFields.imgURL: meal.getImageURL()])
                 
-                self.ref.child("meals").child(meal.getID()).setValue(
-                    [Constants.MealFields.chefID: meal.getChefId(),
-                     Constants.MealFields.date: meal.getDate(),
-                     Constants.MealFields.description: meal.getDescription(),
-                     Constants.MealFields.imgURL: meal.getImageURL(),
-                     Constants.MealFields.ingredients: meal.getIngredients(),
-                     Constants.MealFields.name: meal.getName(),
-                     Constants.MealFields.price: meal.getPrice(),
-                     Constants.MealFields.servingType: meal.getServingType(),
-                     Constants.MealFields.shortDesc: meal.getShortDescription()])
+                
+                
                 
                 print("Upload successful?")
             }

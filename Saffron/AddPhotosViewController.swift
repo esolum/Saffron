@@ -33,6 +33,10 @@ class AddPhotosViewController: UIViewController, DZNEmptyDataSetSource, DZNEmpty
         //self.photoTableView.rowHeight = UITableViewAutomaticDimension
         //self.photoTableView.estimatedRowHeight = 150
         newMeal = Meal()
+        if let user = FirebaseUtil.getCurrentUserData() {
+            newMeal.setChefID(id: user.uid)
+        }
+        
         nextButton.isEnabled = false
     }
 

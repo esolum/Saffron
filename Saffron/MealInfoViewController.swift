@@ -52,7 +52,7 @@ class MealInfoViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Text Field Delegate Functions
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if textField == nameField || textField == shortDescField {
+        if textField == nameField {
             
             var ruleSet = ValidationRuleSet<String>()
             ruleSet.add(rule: ValidationUtils.stringRequiredRule)
@@ -61,10 +61,27 @@ class MealInfoViewController: UIViewController, UITextFieldDelegate {
             let result = Validator.validate(input: textField.text!, rules: ruleSet)
             
             switch result {
-                case .valid: print("😀")
+                case .valid:
+                        newMeal.setName(name: textField.text!)
                 case .invalid(let failures):
                     let errors = failures as! [ValidationError]
                     print(errors.first!.message)
+            }
+        }
+        else if textField == shortDescField {
+            
+            var ruleSet = ValidationRuleSet<String>()
+            ruleSet.add(rule: ValidationUtils.stringRequiredRule)
+            ruleSet.add(rule: ValidationUtils.maxMedLengthRule)
+            
+            let result = Validator.validate(input: textField.text!, rules: ruleSet)
+            
+            switch result {
+            case .valid:
+                newMeal.setShortDescription(shortDesc: textField.text!)
+            case .invalid(let failures):
+                let errors = failures as! [ValidationError]
+                print(errors.first!.message)
             }
         }
         else if textField == longDescField {
@@ -75,7 +92,8 @@ class MealInfoViewController: UIViewController, UITextFieldDelegate {
             let result = Validator.validate(input: textField.text!, rules: ruleSet)
             
             switch result {
-                case .valid: print("😀")
+                case .valid:
+                    newMeal.setDescription(desc: textField.text!)
                 case .invalid(let failures):
                     let errors = failures as! [ValidationError]
                     print(errors.first!.message)
@@ -90,7 +108,8 @@ class MealInfoViewController: UIViewController, UITextFieldDelegate {
             
             
             switch result {
-            case .valid: print("😀")
+            case .valid:
+                newMeal.setServingType(type: textField.text!)
             case .invalid(let failures):
                 let errors = failures as! [ValidationError]
                 print(errors.first!.message)
@@ -98,13 +117,14 @@ class MealInfoViewController: UIViewController, UITextFieldDelegate {
             }
         }
         else if textField == priceField {
-            var ruleSet = ValidationRuleSet<Float>()
-            ruleSet.add(rule: ValidationUtils.floatRequiredRule)
+            var ruleSet = ValidationRuleSet<Double>()
+            ruleSet.add(rule: ValidationUtils.doubleRequiredRule)
             
-            let result = Validator.validate(input: Float(textField.text!), rules: ruleSet)
+            let result = Validator.validate(input: Double(textField.text!), rules: ruleSet)
         
             switch result {
-                case .valid: print("😀")
+                case .valid:
+                    newMeal.setPrice(price: Double(textField.text!)!)
                 case .invalid(let failures):
                     let errors = failures as! [ValidationError]
                     print(errors.first!.message)
@@ -117,7 +137,8 @@ class MealInfoViewController: UIViewController, UITextFieldDelegate {
             let result = Validator.validate(input: Int(textField.text!), rules: ruleSet)
             
             switch result {
-                case .valid: print("😀")
+                case .valid:
+                    newMeal.setTotalServings(servings: Int(textField.text!)!)
                 case .invalid(let failures):
                     let errors = failures as! [ValidationError]
                     print(errors.first!.message)
