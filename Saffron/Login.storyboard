@@ -135,13 +135,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Forgot your password?"/>
                             </button>
+                            <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RnZ-te-rch" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="58" y="198" width="265" height="314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="ballSpinFadeLoader"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="RnZ-te-rch" id="FT7-Zk-zSl"/>
                         <outlet property="createAccountButtin" destination="kJX-xP-JaV" id="vVJ-KM-4Rr"/>
                         <outlet property="emailField" destination="tnN-IL-fGn" id="ZEm-7y-jWJ"/>
                         <outlet property="loginButton" destination="AZl-iw-XDf" id="61X-XP-b0u"/>
+                        <outlet property="logoLabel" destination="JAj-kF-23a" id="PC2-qm-owq"/>
                         <outlet property="passwordField" destination="scu-uU-9da" id="66q-zz-MxU"/>
                     </connections>
                 </viewController>

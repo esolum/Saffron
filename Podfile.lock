@@ -74,6 +74,7 @@ DEPENDENCIES:
   - ImageLoader
   - IQKeyboardManagerSwift
   - MARoundButton
+  - NVActivityIndicatorView
   - NVActivityIndicatorView (~> 3.5)
   - RAMAnimatedTabBarController (~> 2.0.13)
   - RAReorderableLayout
@@ -113,6 +114,6 @@ SPEC CHECKSUMS:
   Validator: b1793fbfd0046097551d0edd18e2c30792d69ef5
   WWCalendarTimeSelector: 334f8b4ff16367d75fb9f21073203641fbd3d749
 
-PODFILE CHECKSUM: d8c9c1e12396a89f30c1ab482e6d0af04accfa6d
+PODFILE CHECKSUM: b25fee20452390b6be873ad96c671ac5449ea302
 
 COCOAPODS: 1.2.0

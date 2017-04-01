@@ -26,7 +26,7 @@ target 'Saffron' do
   pod 'Hue'
   pod 'SkyFloatingLabelTextField', '~> 3.0'
   pod 'Validator'
-  pod "TBTextViewWithCharLimit"
+  pod 'TBTextViewWithCharLimit'
 
   target 'SaffronTests' do
     inherit! :search_paths

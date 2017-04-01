@@ -42,7 +42,7 @@
         <scene sceneID="VOX-Db-zMB">
             <objects>
                 <viewControllerPlaceholder storyboardName="Following" id="ThY-rZ-bIl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Following" image="DB22E7F6-FCD9-4B64-940D-E9C69AD0A2F9" id="HHb-Ze-CEK" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" title="Following" image="DBAE1590-7A8F-4DE3-BE4A-0A77A80849D8" id="HHb-Ze-CEK" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <connections>
                             <outlet property="animation" destination="KT9-GD-jPg" id="2ih-b4-7B5"/>
                         </connections>
@@ -233,7 +233,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="DB22E7F6-FCD9-4B64-940D-E9C69AD0A2F9" width="26" height="25">
+        <image name="DBAE1590-7A8F-4DE3-BE4A-0A77A80849D8" width="26" height="25">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

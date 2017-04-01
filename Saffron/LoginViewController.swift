@@ -11,15 +11,17 @@ import Hue
 import SkyFloatingLabelTextField
 import Validator
 import Firebase
+import NVActivityIndicatorView
 
 class LoginViewController: UIViewController {
     
     // MARK: - Properties
     @IBOutlet weak var emailField: SkyFloatingLabelTextField!
     @IBOutlet weak var passwordField: SkyFloatingLabelTextField!
+    @IBOutlet weak var logoLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
-    
     @IBOutlet weak var createAccountButtin: UIButton!
+    @IBOutlet weak var activityIndicatorView: NVActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,7 @@ class LoginViewController: UIViewController {
         gradient.frame = self.view.bounds
         self.view.layer.insertSublayer(gradient, at: 0)
         //vc.view.backgroundColor = UIColor.orange()
+        activityIndicatorView.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,15 +41,25 @@ class LoginViewController: UIViewController {
     
     // MARK: - Button Actions
     @IBAction func loginPressed(_ sender: UIButton) {
-        print("Login pressed")
         //Validate all fields first
+        
         if let email = self.emailField.text, let password = self.passwordField.text {
+            self.view.subviews.forEach({ $0.isHidden = true }) // this hides all the other elements so that the activity indicator shows up nicely
+            
+            //Start activity indicator view animation
+            logoLabel.isHidden = false
+            activityIndicatorView.isHidden = false
+            activityIndicatorView.startAnimating()
+
             FIRAuth.auth()?.signIn(withEmail: email, password: password) { (user, error) in
                 if let error = error {
                     print(error.localizedDescription)
+                    self.activityIndicatorView.stopAnimating()
+                    self.view.subviews.forEach({ $0.isHidden = false })
+                    self.activityIndicatorView.isHidden = true
+                    
                 }
                 if let user = user {
-                    print("We've got ourselves a live one")
                     self.dismiss(animated: true, completion: nil)
                 }
             }

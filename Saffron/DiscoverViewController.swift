@@ -26,7 +26,7 @@ class DiscoverViewController: UIViewController {
                 storyboard?.instantiateViewController(
                     withIdentifier: "login")
                 )!
-            present(vc, animated: true, completion: nil)
+            present(vc, animated: false, completion: nil)
             
             
         }
